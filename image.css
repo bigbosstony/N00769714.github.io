@@ -9,6 +9,6 @@
     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
 }
 
-.img_1-1{background-image:url('https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg');}
+.img_1-1{background-image:src('IMG_2012.jpg');}
 .img_1-2{background-image:url('https://farm7.staticflickr.com/6092/6227418584_d5883b0948.jpg');}
 .img_1-3{background-image:url('https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg');}

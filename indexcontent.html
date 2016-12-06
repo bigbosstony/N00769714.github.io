@@ -1,4 +1,354 @@
 <ARTICLE ID="Article_1">
+
+<SECTION ID ="Section_14">
+<H2>Week14</H2>
+	<p><b><H3>Introduction</H3></b><br>
+	
+		The project will be able to detect car collision and save the recorded video into a file server to be used 
+		by the android application. The goal of this project is to notify the car owner of an accident happening. 
+		The owner should be able to access the video of the recorded accident using their mobile application. We are using
+		a vibration sensor (buzzer) to detect an impact signal that will be sent to the raspberry pi which then would run
+		the camera to record a 20 second video that will be sent to the file server. This video file can then be accessesed
+		by the owner by using an android application. 
+		
+		Take note that for now, our current production build is only sending the video file to the owner's email address.
+
+	</p>
+	<p><b><H3>System Diagram</H3></b><br>
+	</p>
+		<p><img src="/documentation/Diagram.png" alt="schema" style="width:100px height:300px"></p>
+	<p><b><H3>Bills of Material / Budget</H3></b><br>
+	<table>
+			<tbody>
+				<tr>
+				<th>Equipement</th>
+				<th>Quantity</th>
+				<th>Cost with tax</th>
+				</tr>
+				
+				<tr>
+				<td>Raspberry Pi 3 Starter Kit</td>
+				<td>1</td>
+				<td align ="right">$89.99</td>
+				</tr>
+				
+				<tr>
+				<td>Pi Camera Module</td>
+				<td>1</td>
+				<td align ="right">$38.79</td>
+				</tr>
+				
+				<tr>
+				<td>Piezo Buzzer Element (Vibration Sensor)</td>
+				<td>2</td>
+				<td align ="right">$5.19</td>
+				</tr>
+				
+				<tr>
+				<td>Camera Module Case</td>
+				<td>1</td>
+				<td align ="right">$25.28</td>
+				</tr>
+				
+				<tr>
+				<td>1 Mega Ohm Resistor</td>
+				<td>1</td>
+				<td align ="right">$0.25</td>
+				</tr>
+				
+				<tr>
+				<td>330 Ohm Resistor</td>
+				<td>1 </td>
+				<td align ="right">$0.25</td>
+				</tr>
+				
+				<tr>
+				<td>Full Sized Breadboard</td>
+				<td>1 </td>
+				<td align ="right">$8.81</td>
+				</tr>
+				
+				<tr>
+				<td>USB GPS Dongle</td>
+				<td>1 </td>
+				<td align ="right">$50.00</td>
+				</tr>
+				
+				<tr>
+				<td>LED</td>
+				<td>1 </td>
+				<td align ="right">$0.25</td>
+				</tr>
+				
+				<tr>
+				<td>Total</td>
+				<td> </td>
+				<td align ="right">$193.24</td>
+				</tr>
+			</tbody>
+		</table>
+		<p><i>Table 1: Required time for building the project.</i></p>	
+	<p><b><H3>Time Commitment</H3></b><br>
+		By following this build guide, you will spend this amount of time doing this project excluding the time that
+		you acquire all the materials needed.
+		
+		<table>
+			<tbody>
+				<tr>
+				<th>To do</th>
+				<th>Time Required</th>
+				</tr>
+					
+				<tr>	
+				<td>Raspberry Pi 3 power up</td>
+				<td align ="right">(30 mins) I will take around 30 min to set up the raspberry Pi. You have to install the OS and connect it to the internet.</td>
+				</tr>
+				
+				<tr>
+				<td>PCB Soldering</td>
+				<td align ="right">1~2 hours for schematics and soldering. 
+					Printing the PCB could take 1 hour. And 30 min to solder it.  </td>
+				</tr>
+				
+				<tr>
+				<td>Project Wiring</td>
+				<td align ="right">15~30 mins</td>
+				</tr>
+				
+				<tr>
+				<td>Importing Codes</td>
+				<td align ="right">1 hour, depends if you have all the required packages for using
+					the camera and accessing email.</td>
+				</tr>
+				
+				<tr>
+				<td>Running Code</td>
+				<td align ="right">5-10 mins, depends on the length of the video. The longer it is, the more time it needs to perform. </td>
+				</tr>
+				
+				
+			</tbody>
+		</table>
+		<p><i>Table 2: Required time for building the project.</i></p>		
+ 
+ 	<p><b><H3>Mechanical Assembly</H3></b><br></p>
+	<p>This shows the circuit you have to build for the sensor to detect a vibration coming from tapping it. 
+		The LED will blink if the video file was sent to your email. </p>
+	<p><img src="/documentation/teleSchema.png" alt="schema" style="width:100px height:300px">
+		<br>JP1 --- 2 is for the inner side of the buzzer. Positive. <br> --- 1 outer part of the buzzer. Negative.
+		
+		<p> Following the diagram and placing each components in a breadboard would ensure a working vibration sensor program </p>
+	
+	<p> Connect the particular camera module that I listed above to your Raspberry Pi 3.
+		<img src="/documentation/cameramodule.png" alt="schema" style="width:100px height:100px">
+		 <a href="https://www.raspberrypi.org/learning/getting-started-with-picamera/">Check this out to ensure you have a working camera for
+			 raspberry pi!</a>
+		
+	<p><b><H3>PCB/Soldering</H3></b><br>
+		<p> We tried implementing our working circuit to a PCB but it didn't work. </p>
+	
+	<p><b><H3>Unit Testing</H3></b><br>
+		<p>You can use these programs for testing your Camera and Vibration Sensor if they are working properly.</p>
+	
+	<p><b> Camera </b><br> 
+		<code><pre>"
+		from picamera import PiCamera
+		from time import sleep
+
+		camera = PiCamera()
+
+		camera.start_preview()
+		camera.start_recording('/home/pi/Desktop/Camera/video1.h264')
+		sleep(5)
+		camera.stop_recording()
+		camera.stop_preview()
+		"
+		</pre>
+		</code>
+		
+		</p>
+	
+	<p><b> Vibration Sensor</b> <br>
+		<code><pre>"
+		from time import sleep
+		import RPi.GPIO as GPIO
+
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN )
+		sleep(1)
+
+		while True:
+       		result = GPIO.input(5)
+        	if result == 1:
+            	print("VIbrated")
+ 	    	sleep(1)   
+		"</pre></code>
+		</p>
+	
+	<p> Or you can just download the files here 
+	<br><a href="/documentation/unit test/camera.py">camera.py</a>
+	<br><a href="/documentation/unit test/basicSensor.py">basicSensor.py</a></p>
+	
+	<p><b><H3>Production Testing</H3></b><br>
+		<p>We wanted the video file recorded to be sent to a file server, but as of now , it is being sent to your email.
+		
+		<p>Main program  <br><h4>testDrive.py</h4><br>
+			<code><pre>"
+from time import sleep
+import RPi.GPIO as GPIO
+import time
+from picamera import PiCamera
+from alertnoise import sendAlert
+from cameraCode import initRecvideo, stopVideo, recVideo
+import os
+
+#initRecvideo()
+
+# initialize sesnor and leds
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN )
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18,GPIO.OUT)
+sleep(1)
+isTrig = False
+
+def trig():
+    print "LED on"
+    GPIO.output(18,GPIO.HIGH)
+    time.sleep(1)
+    print "LED off"
+    GPIO.output(18,GPIO.LOW)
+    time.sleep(1)
+
+print("Telematics~ running ...");
+while True:
+        GPIO.output(18,GPIO.HIGH)
+
+        if isTrig == True:
+            trig();
+            #stopVideo()
+            
+        result = GPIO.input(5)
+        if result == 1:
+            print("Vibrated\n********************************\nRecording Video")
+            isTrig =True
+            vidName = time.strftime("%d%m%Y")+time.strftime("%I%M%S")
+            recVideo(vidName)
+ 	    sleep(1)
+ 	    hname = vidName+"video.h264"
+ 	    mname = vidName+"video.mp4"
+ 	    print("Converting video file h264 to MP4");
+ 	    commands = "sudo MP4Box -add" + " "+hname + " " +mname
+ 	    os.system(commands)
+            print("Sending video file to email");
+ 	    sendAlert(vidName)
+ 	    print("File sent");
+			"</pre></code>
+
+			
+			
+		<p> <h3>NOTE: make sure to fill the values for raspaddress and useraddress. I removed it for obvious privacy reason.</h3>
+		<br>Program that sends the recorded video file to your email <br><h4>alertnoise.py</h4><br>
+		<code><pre>"
+#Libraries necessary to send email using python
+import smtplib
+from email.MIMEMultipart import MIMEMultipart
+from email.MIMEText import MIMEText
+from email.MIMEBase import MIMEBase
+from email import encoders
+
+
+#Email of the Raspberry Pi
+raspaddress = ""
+
+#User's Email address
+useraddress = ""	
+
+#Structure of the email
+msg = MIMEMultipart()
+msg['From'] = raspaddress
+msg['To'] = useraddress
+msg['Subject'] = "Aegis Alert Message"
+
+
+def alert1(vidName):
+    body1 = "Movement detected in the room \n"
+    filename = vidName+"video.mp4"
+    openAtt = "/home/pi/Desktop/Final Presentation/"+filename
+    attachment = open(openAtt, "rb")
+    part = MIMEBase('application', 'octet-stream')
+    part.set_payload((attachment).read())
+    encoders.encode_base64(part)
+    part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+    msg.attach(part)
+    return body1
+
+def alert2():
+    body2 = "Termperature Change Alert \n"
+    return body2
+
+def alert3():
+    body3 = "Smoke Detected \n"
+    return body3
+
+def sendAlert(vidName):    
+    body = alert1(vidName) 
+    msg.attach(MIMEText(body, 'plain'))
+    #Parameters for GMail Server
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    # Security function needed to connect to the Gmail server to protect the password.
+    server.starttls()
+    #Password of Raspberry Pi's Email
+    server.login(raspaddress, "P@$$W0RD")
+    #Sending the email
+    text = msg.as_string()
+    server.sendmail(raspaddress, useraddress, text)
+    server.quit()
+			    "</pre>
+		</code>
+
+	<p> Records the video for 20 seconds. Can be adjusted by changing the value of sleep <br><h4>cameraCode.py </h4><br>
+	<code><pre>"
+from picamera import PiCamera
+from time import sleep
+
+camera = PiCamera()
+
+def initRecvideo():
+        # initialize camera
+        camera = PiCamera()
+        camera.start_preview()
+
+def stopVideo():
+        camera.stop_preview()
+
+def recVideo( sNum ):
+	dest = '/home/pi/Desktop/Final Presentation/'+str(sNum)+'video.h264'
+	camera.start_preview()
+	camera.start_recording(dest)
+	sleep(20)
+	camera.stop_recording()
+	camera.stop_preview()
+	return;
+"</pre></code>
+		
+	<p> Or you can just download the files here 
+	<br><a href="/documentation/production test/cameraCode.py">cameraCode.py</a>
+	<br><a href="/documentation/production test/alertnoise.py">alertnoise.py</a>
+	<br><a href="/documentation/production test/testDrive.py">testDrive.py</a></p>
+	
+	<p>Since raspberry pi can only play video files of type h264 you
+		might have some issue with your video conversion to mp4 if you don't have a premade mp4 file. Just create "hello.mp4"
+		in your folder if the problem occurs. </p>
+	
+	<p> This is how the final product should work<br> Here I'm linking my colleague's build video <a href="semjerome.github.io">SemJerome</a><br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/-nUCVmVpQG4" frameborder="0" allowfullscreen=""></iframe>
+	
+	<p><b><H3>Reproducibility Based on Instructions</H3></b><br>
+		
+	<p>If there are things that I may not have clearly made here, you can also check my friend's build log @<a href="semjerome.github.io">SemJerome</a></p>
+</SECTION>
 	
 <SECTION ID="Section_13">
 <H2>Week 13</H2>	

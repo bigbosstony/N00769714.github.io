@@ -409,16 +409,15 @@ GPIO.cleanup()
 	
 	<p><b><H4>Production Testing</H4></b><br>
 		<p>If all the parts you tested works fine, you can use this demo.py code and 
-			combine all the parts together using table 3 pin connection for production testing.
+			combine all the parts together using table 3 pin connection for production testing.(camera will
+			be included in next semester.)
 			
 					<p><b> Demo </b><br> 
 		<code><pre>
 #!/usr/bin/python
-#
-# 
+# Author: Tony
 # Measure distance using an ultrasonic module
 # in a loop.
-#
 # -----------------------
 # -----------------------
 # Import required Python libraries
@@ -430,9 +429,6 @@ import time
 import RPi.GPIO as GPIO
 
 #-----------Camera-------------
-
-
-
 #------LED------------------
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
@@ -497,7 +493,6 @@ def measure_average():
 # Use BCM GPIO references
 # instead of physical pin number
 
-
 #------
 GPIO.setmode(GPIO.BOARD)
 
@@ -534,7 +529,6 @@ i = 0
 # the user seeing lots of unnecessary error
 
 # messages.
-
 
 try:
   while True:

@@ -288,7 +288,7 @@
 		</p>
 	
 		<p><b> led-blink </b><br> 
-		<code><pre>"
+		<code><pre>
 import RPi.GPIO as GPIO  
 import time  
 # blinking function  
@@ -308,13 +308,13 @@ GPIO.setwarnings(False)
 for i in range(0,5):  
         blink(12)  
 GPIO.cleanup() 
-		"
+		
 		</pre>
 		</code>
 		</p>
 	
 		<p><b> led-blink-2 </b><br> 
-		<code><pre>"
+		<code><pre>
 import RPi.GPIO as GPIO
 import time  
 
@@ -332,14 +332,12 @@ try:
 
 except KeyboardInterrupt:
     GPIO.cleanup()
-
-		"
 		</pre>
 		</code>
 		</p>
 	
 		<p><b> HCSR04 </b><br> 
-		<code><pre>"
+		<code><pre>
 import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BCM)
@@ -375,13 +373,12 @@ distance = round(distance, 2)
 print "Distance:",distance,"cm"
 
 GPIO.cleanup()
-		"
 		</pre>
 		</code>
 		</p>	
 	
 		<p><b> DC Motor </b><br> 
-		<code><pre>"
+		<code><pre>
 import RPi.GPIO as GPIO
 from time import sleep
  
@@ -406,7 +403,6 @@ print "Stopping motor"
 GPIO.output(Motor1E,GPIO.LOW)
  
 GPIO.cleanup()
-		"
 		</pre>
 		</code>
 		</p>	

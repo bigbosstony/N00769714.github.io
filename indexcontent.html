@@ -213,7 +213,7 @@
 	<p><img src="/Hardware/motor.png" alt="schema" style="width:100px height:300px">
 	<p><i>Figure 5: Attached the battery and the motor</i></p>		
 	</ol>
-	<li>Full Connection</li>
+	<li>Full Raspberry Pi pin connection</li>
 		<table>
 			  <tr>
 			    <th>Sensor</th>
@@ -262,7 +262,7 @@
 			</table>
 	<p><i>Table 3: Mapping pins from sensors to Raspberry pi</i></p>		
 
-	<p>Complete build Video</p>
+	<p><b>Complete build Video</b></p>
 	
 	
 	<p><b><H4>PCB/Soldering</H4></b><br>
@@ -404,12 +404,197 @@ GPIO.output(Motor1E,GPIO.LOW)
 GPIO.cleanup()
 		</pre>
 		</code>
-		</p>	
-	
+		</p>		
 	
 	
 	<p><b><H4>Production Testing</H4></b><br>
-		<p>If all the parts you tested works fine, you can use this demo.py code and table 3 for production testing.
+		<p>If all the parts you tested works fine, you can use this demo.py code and 
+			combine all the parts together using table 3 pin connection for production testing.
+			
+					<p><b> Demo </b><br> 
+		<code><pre>
+#!/usr/bin/python
+#
+# 
+# Measure distance using an ultrasonic module
+# in a loop.
+#
+# -----------------------
+# -----------------------
+# Import required Python libraries
+# -----------------------
+from __future__ import print_function
+from picamera import PiCamera
+from time import sleep
+import time
+import RPi.GPIO as GPIO
+
+#-----------Camera-------------
+
+
+
+#------LED------------------
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+GPIO.setup(11,GPIO.OUT)
+GPIO.setup(13,GPIO.OUT)
+#------DC_MOTOR-----------------
+
+Motor1E = 22
+Motor1B = 32
+Motor1A = 36
+GPIO.setup(Motor1A,GPIO.OUT)
+GPIO.setup(Motor1B,GPIO.OUT)
+GPIO.setup(Motor1E,GPIO.OUT)
+
+# blinking function  
+def blink(pin):  
+        GPIO.output(pin,GPIO.HIGH)  
+        time.sleep(0.1)  
+        GPIO.output(pin,GPIO.LOW)  
+        time.sleep(0.1)  
+        return 
+
+# -----------------------
+# Define some functions
+# -----------------------
+def measure():
+  # This function measures a distance
+  GPIO.output(GPIO_TRIGGER, True)
+  # Wait 10us
+  time.sleep(0.00001)
+  GPIO.output(GPIO_TRIGGER, False)
+  start = time.time()
+  
+  while GPIO.input(GPIO_ECHO)==0:
+    start = time.time()
+
+  while GPIO.input(GPIO_ECHO)==1:
+    stop = time.time()
+
+  elapsed = stop-start
+  distance = (elapsed * speedSound)/2
+
+  return distance
+
+def measure_average():
+  # This function takes 3 measurements and
+  # returns the average.
+
+  distance1=measure()
+  time.sleep(0.1)
+  distance2=measure()
+  time.sleep(0.1)
+  distance3=measure()
+  distance = distance1 + distance2 + distance3
+  distance = distance / 3
+  return distance
+
+# -----------------------
+# Main Script
+# -----------------------
+
+# Use BCM GPIO references
+# instead of physical pin number
+
+
+#------
+GPIO.setmode(GPIO.BOARD)
+
+# Define GPIO to use on Pi
+GPIO_TRIGGER = 16
+GPIO_ECHO    = 18
+
+# Speed of sound in cm/s at temperature
+temperature = 20
+speedSound = 33100 + (0.6*temperature)
+
+print("Ultrasonic Measurement")
+print("Speed of sound is",speedSound/100,"m/s at ",temperature,"deg")
+
+# Set pins as output and input
+GPIO.setup(GPIO_TRIGGER,GPIO.OUT)  # Trigger
+GPIO.setup(GPIO_ECHO,GPIO.IN)      # Echo
+
+# Set trigger to False (Low)
+GPIO.output(GPIO_TRIGGER, False)
+
+# Allow module to settle
+time.sleep(0.5)
+
+# boolean
+checker = True
+#
+
+i = 0
+
+# Wrap main content in a try block so we can
+# catch the user pressing CTRL-C and run the
+# GPIO cleanup function. This will also prevent
+# the user seeing lots of unnecessary error
+
+# messages.
+
+
+try:
+  while True:
+    distance_now = measure_average()
+    if distance_now <= 10 and i == 0:
+       print ("CAR DETECTED : {0:5.1f}".format(distance_now),"cm")
+       GPIO.output(11, GPIO.LOW)
+       GPIO.output(13, GPIO.HIGH)
+       print ("opening gate")
+       GPIO.output(Motor1A, GPIO.HIGH)
+       GPIO.output(Motor1B, GPIO.LOW)
+       GPIO.output(Motor1E, GPIO.HIGH)
+       sleep(0.05)
+       print ("motor off")
+       GPIO.output(Motor1E, GPIO.LOW)
+       i = 1
+
+       time.sleep(2)
+#       print ("closing gate")
+#       GPIO.output(Motor1A, GPIO.LOW)
+#       GPIO.output(Motor1B, GPIO.HIGH)
+#       GPIO.output(Motor1E, GPIO.HIGH)
+#       sleep(0.05)
+#       print ("motor off")
+#       GPIO.output(Motor1E, GPIO.LOW)
+    elif distance_now <=10 and i > 0:
+            GPIO.output(11, GPIO.LOW)
+            GPIO.output(13, GPIO.HIGH)
+            time.sleep(1)
+        
+    elif distance_now >10 and i > 0:
+            GPIO.output(11, GPIO.HIGH)
+            GPIO.output(13, GPIO.LOW)
+            print ("closing gate") 
+            GPIO.output(Motor1A, GPIO.LOW)
+            GPIO.output(Motor1B, GPIO.HIGH)
+            GPIO.output(Motor1E, GPIO.HIGH)
+            sleep(0.05)
+            print ("motor off")
+            GPIO.output(Motor1E, GPIO.LOW)
+            i = 0;
+    
+    else:
+        print("Distance : {0:5.1f}".format(distance_now),"cm")
+        GPIO.output(11, GPIO.HIGH)
+        GPIO.output(13, GPIO.LOW)        
+
+
+        
+#        time.sleep(1)
+    
+except KeyboardInterrupt:
+  # User pressed CTRL-C
+  # Reset GPIO settings
+  GPIO.output(11, GPIO.LOW)
+  GPIO.cleanup()
+		</pre>
+		</code>
+		</p>
+			
 	<p><b><H4>Reproducibility Based on Instructions</H4></b><br>
 		
 </SECTION>

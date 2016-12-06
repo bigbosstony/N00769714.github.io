@@ -269,7 +269,149 @@
 		<p> This project will operate with a PCB board, but right now I'm not using it. </p>
 	
 	<p><b><H4>Unit Testing</H4></b><br>
-		<p>For testing purpose you can use these codes for testing your Camera, led, Ultrasonic Sensor and motor.</p>
+		<p>For testing purpose you can use these codes for testing your Camera, led, Ultrasonic Sensor and motor
+		that you build from Build Steps section.</p>
+	
+		<p><b> Camera </b><br> 
+		<code><pre>"
+		from picamera import PiCamera
+		from time import sleep
+
+		camera = PiCamera()
+
+		camera.start_preview()
+		sleep(5)
+		camera.stop_preview()
+		"
+		</pre>
+		</code>
+		</p>
+	
+		<p><b> led-blink </b><br> 
+		<code><pre>"
+import RPi.GPIO as GPIO  
+import time  
+# blinking function  
+def blink(pin):  
+        GPIO.output(pin,GPIO.HIGH)  
+        time.sleep(1)  
+        GPIO.output(pin,GPIO.LOW)  
+        time.sleep(1)  
+        return  
+# to use Raspberry Pi board pin numbers
+GPIO.setmode(GPIO.BOARD)  
+# set up GPIO output channel  
+GPIO.setup(12, GPIO.OUT)
+GPIO.setwarnings(False)
+
+# blink GPIO17 50 times  
+for i in range(0,5):  
+        blink(12)  
+GPIO.cleanup() 
+		"
+		</pre>
+		</code>
+		</p>
+	
+		<p><b> led-blink-2 </b><br> 
+		<code><pre>"
+import RPi.GPIO as GPIO
+import time  
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
+GPIO.setup(12,GPIO.OUT)
+try:
+    while True:
+        print "LED ON"
+        GPIO.output(12,GPIO.HIGH)
+        time.sleep(1)
+        print "LED OFF"
+        GPIO.output(12,GPIO.LOW)
+        time.sleep(1)
+
+except KeyboardInterrupt:
+    GPIO.cleanup()
+
+		"
+		</pre>
+		</code>
+		</p>
+	
+		<p><b> HCSR04 </b><br> 
+		<code><pre>"
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
+
+TRIG = 23 
+ECHO = 24
+
+print "Distance Measurement In Progress"
+
+GPIO.setup(TRIG,GPIO.OUT)
+GPIO.setup(ECHO,GPIO.IN)
+
+GPIO.output(TRIG, False)
+print "Waiting For Sensor To Settle"
+time.sleep(2)
+
+GPIO.output(TRIG, True)
+time.sleep(0.00001)
+GPIO.output(TRIG, False)
+
+while GPIO.input(ECHO)==0:
+  pulse_start = time.time()
+
+while GPIO.input(ECHO)==1:
+  pulse_end = time.time()
+
+pulse_duration = pulse_end - pulse_start
+
+distance = pulse_duration * 17150
+
+distance = round(distance, 2)
+
+print "Distance:",distance,"cm"
+
+GPIO.cleanup()
+		"
+		</pre>
+		</code>
+		</p>	
+	
+		<p><b> DC Motor </b><br> 
+		<code><pre>"
+import RPi.GPIO as GPIO
+from time import sleep
+ 
+GPIO.setmode(GPIO.BOARD)
+ 
+Motor1A = 16
+Motor1B = 18
+Motor1E = 22
+ 
+GPIO.setup(Motor1A,GPIO.OUT)
+GPIO.setup(Motor1B,GPIO.OUT)
+GPIO.setup(Motor1E,GPIO.OUT)
+ 
+print "Turning motor on"
+GPIO.output(Motor1A,GPIO.HIGH)
+GPIO.output(Motor1B,GPIO.LOW)
+GPIO.output(Motor1E,GPIO.HIGH)
+ 
+sleep(2)
+ 
+print "Stopping motor"
+GPIO.output(Motor1E,GPIO.LOW)
+ 
+GPIO.cleanup()
+		"
+		</pre>
+		</code>
+		</p>	
+	
+	
 	
 	<p><b><H4>Production Testing</H4></b><br>
 		<p>If all the parts you tested works fine, you can use this demo.py code and table 3 for production testing.

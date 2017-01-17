@@ -22,6 +22,7 @@ Proposal
 *Proposal for the SmartParkingLot Project*
 
 Prepared by Yan Yu
+
 *Computer Engineering Technology Student*
 github.com/bigbosstony/bigbosstony.github.io
 

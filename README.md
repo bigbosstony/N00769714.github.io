@@ -1,5 +1,5 @@
 ---
-bibliography:
+bibliography: RPiCitations.bib
 csl: apa.csl
 ---
 

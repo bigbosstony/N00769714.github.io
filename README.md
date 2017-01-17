@@ -1,8 +1,13 @@
-Smart Parking Project 2016-2017
-======================================
+---
+bibliography:
+csl: apa.csl
+---
 
-This is a Parking Lot project.
+
+SmartParkingLot Project
+======================================
 
 Projects website: [https://bigbosstony.github.io/](https://bigbosstony.github.io/)
 
-----------------------------------------
+Table of Contents
+==================

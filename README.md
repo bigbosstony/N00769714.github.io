@@ -65,6 +65,7 @@ similar efforts.
 
  
 
+<<<<<<< HEAD
 [@1516083]
 
 1.  [@1510592]
@@ -72,6 +73,8 @@ similar efforts.
 2.  [@7030255]
 
  
+=======
+>>>>>>> origin/master
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:

@@ -5,49 +5,28 @@ bibliography: SPPCitations.bib
  
 
 SmartParkingLot Project
-
 ======================================
-
- 
 
 Projects website:
 [https://bigbosstony.github.io/](https://bigbosstony.github.io/)
 
- 
 
 Table of Contents
-
 ==================
-
  
-
 1.  [Proposal](\#proposal)
-
- 
-
 2.  [References](\#references)
 
- 
 
 Proposal
-
 --------
 
- 
 
 *Proposal for the SmartParkingLot Project\*
-
- 
-
 Prepared by Yan Yu
-
 *Computer Engineering Technology Student\*
 
- 
-
-**Executive Summary**
-
- 
+**Executive Summary** 
 
 As a student in the Computer Engineering Technology program, I will be
 integrating the knowledge and skills I have learned from our program into this

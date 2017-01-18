@@ -65,6 +65,23 @@ similar efforts.
 
  
 
+The first [@6213519]
+
+ 
+
+The second [@1516083]
+
+ 
+
+The third [@1510592]
+
+ 
+
+The forth [@7030255]
+
+ 
+
+ 
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:

@@ -1,30 +1,27 @@
 ---
-csl: apa.csl
 bibliography: SPPCitations.bib
+csl: apa.csl
 ---
+
  
 
 SmartParkingLot Project
-======================================
+=======================
 
-Projects website:
-[https://bigbosstony.github.io/](https://bigbosstony.github.io/)
-
+Projects website: <https://bigbosstony.github.io/>
 
 Table of Contents
-==================
- 
-1.  [Proposal](\#proposal)
-2.  [References](\#references)
+=================
 
+1. [Proposal](#proposal)
+
+2. [References](#references)
 
 Proposal
 --------
 
-
-*Proposal for the SmartParkingLot Project\*
-Prepared by Yan Yu
-*Computer Engineering Technology Student\*
+*Proposal for the SmartParkingLot Project\* Prepared by Yan Yu* Computer
+Engineering Technology Student\*
 
 **Executive Summary** 
 
@@ -45,7 +42,6 @@ be completed in CENG 317 Hardware Production Techniques independently and the
 application will be completed in CENG 319 Software Project. These will be
 integrated together in the subsequent term in CENG 355 Computer Systems Project
 as a member of a 2 or 3 student group.
-
 
 **Background**
 
@@ -86,20 +82,20 @@ similar efforts.
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
 
-•	Java Docs from CENG 212 Programming Techniques In Java,
+• Java Docs from CENG 212 Programming Techniques In Java,
 
-•	Construction of circuits from CENG 215 Digital And Interfacing Systems,
+• Construction of circuits from CENG 215 Digital And Interfacing Systems,
 
-•	Rapid application development and Gantt charts from CENG 216 Intro to Software
+• Rapid application development and Gantt charts from CENG 216 Intro to Software
 Engineering,
 
-•	Micro computing from CENG 252 Embedded Systems,
+• Micro computing from CENG 252 Embedded Systems,
 
-•	SQL from CENG 254 Database With Java,
+• SQL from CENG 254 Database With Java,
 
-•	Web access of databases from CENG 256 Internet Scripting; and,
+• Web access of databases from CENG 256 Internet Scripting; and,
 
-•	Wireless protocols such as 802.11 from TECH152 Telecom Networks.
+• Wireless protocols such as 802.11 from TECH152 Telecom Networks.
 
 This knowledge and skill set will enable me to build the subsystems and
 integrate them together as my capstone project.

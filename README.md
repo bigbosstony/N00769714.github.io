@@ -65,6 +65,7 @@ similar efforts.
 
  
 
+<<<<<<< HEAD
 1.  The first article [@6213519]
 
 2.  The second article [@1516083]
@@ -72,6 +73,8 @@ similar efforts.
 3.   
 
 4.   
+=======
+>>>>>>> origin/master
 
 5.  [@1510592]
 

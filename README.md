@@ -106,6 +106,43 @@ integrate them together as my capstone project.
 
  
 
+**Methodology**
+
+This proposal is assigned in the first week of class and is due at the beginning
+of class in the second week of the fall semester. My coursework will focus on
+the first two of the 3 phases of this project:  
+                  Phase 1 Hardware build.  
+                  Phase 2 System integration.  
+                  Phase 3 Demonstration to future employers.
+
+*Phase 1 Hardware build*
+
+The hardware build will be completed in the fall term. It will fit within the
+CENG Project maximum dimensions of 12 13/16" x 6" x 2 7/8" (32.5cm x 15.25cm x
+7.25cm) which represents the space below the tray in the parts kit. The highest
+AC voltage that will be used is 16Vrms from a wall adaptor from which +/- 15V or
+as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.
+
+ 
+
+*Phase 2 System integration*
+
+The system integration will be completed in the fall term.
+
+*Phase 3 Demonstration to future employers*
+
+ 
+
+This project will showcase the knowledge and skills that I have learned to
+potential employers.
+
+ 
+
+The tables below provide rough effort and non-labour estimates respectively for
+each phase. A Gantt chart will be added by week 3 to provide more project
+schedule details and a more complete budget will be added by week 4. It is
+important to start tasks as soon as possible to be able to meet deadlines.
+
  
 
  

@@ -67,17 +67,19 @@ similar efforts.
 
 1.  The first article [@6213519]
 
-2.  [@1516083]
+2.  The second article [@1516083]
 
-3.  [@1510592]
+3.   
 
-4.  [@7030255]
+4.   
 
- 
+5.  [@1510592]
 
- 
+6.  
 
- 
+7.   
+
+8.  [@7030255]
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:

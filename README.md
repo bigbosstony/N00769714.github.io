@@ -31,7 +31,16 @@ As a student in the Computer Engineering Technology program, I will be integrati
 **Background**
 
 The problem solved by project is _when we entering a parking lot, we need to stop to take a ticket and when we left we have to go the ticket machine to pay our ticket. By working with this project we take pictures and read the plate number automatically, so we can save more time and be environmental friendly. Background _ANPR – Automatic number plate recognition is a technology for automatically reading vehicle number plates. And OpenALPR is a similar system, accuracy above 97 percent and it is open source. We can adjust OpenALPR to Raspberry Pi 2. HD camera for taking pictures at both Entry and Exit. Database used to store plate numbers and then calculate the duration of how long the car has been parking. Infrared ray to detective the car in the entry or exit. Driver could pay at the exit by using Interac™ Card, smartphone with NFC or cash. 
+
 I have searched for prior art via Humber’s IEEE subscription selecting “My Subscribed Content”[1] and have found and read [2] which provides insight into similar efforts.
+
+1.
+
+2.
+
+3.
+
+4.
 
 
 

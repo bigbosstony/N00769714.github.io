@@ -13,9 +13,9 @@ Projects website: <https://bigbosstony.github.io/>
 Table of Contents
 =================
 
-1. [Proposal](#proposal)
+1.  [Proposal](#proposal)
 
-2. [References](#references)
+2.  [References](#references)
 
 Proposal
 --------
@@ -65,7 +65,7 @@ similar efforts.
 
  
 
-1.  [@6213519]
+1.  [@6213519]The first article
 
 2.  [@1516083]
 

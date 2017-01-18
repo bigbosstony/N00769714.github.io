@@ -1,18 +1,7 @@
 ---
-csl: /Users/Tony/Desktop/apa.csl
-bibliography: /Users/Tony/Desktop/SPPCitations.bib
----
-
-\---
-
-bibliography: SPPCitations.bib
-
 csl: apa.csl
-
-\---
-
- 
-
+bibliography: SPPCitations.bib
+---
  
 
 SmartParkingLot Project
@@ -42,21 +31,21 @@ Table of Contents
 
 Proposal
 
-\--------
+--------
 
  
 
-\*Proposal for the SmartParkingLot Project\*
+*Proposal for the SmartParkingLot Project\*
 
  
 
 Prepared by Yan Yu
 
-\*Computer Engineering Technology Student\*
+*Computer Engineering Technology Student\*
 
  
 
-\*\*Executive Summary\*\*
+**Executive Summary**
 
  
 
@@ -78,11 +67,8 @@ application will be completed in CENG 319 Software Project. These will be
 integrated together in the subsequent term in CENG 355 Computer Systems Project
 as a member of a 2 or 3 student group.
 
- 
 
-\*\*Background\*\*
-
- 
+**Background**
 
 The problem solved by project is \_when we entering a parking lot, we need to
 stop to take a ticket and when we left we have to go the ticket machine to pay
@@ -144,7 +130,6 @@ integrate them together as my capstone project.
  
 
 References
-
-\----------
+----------
 
  

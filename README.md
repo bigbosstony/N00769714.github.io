@@ -208,10 +208,9 @@ skills developed in our program to create a collaborative IoT capstone project
 demonstrating my ability to learn how to support projects such as the initiative
 described by [3]. I request approval of this project.
 
-
  
 
-References
-----------
+References (Generated in pdf)
+-----------------------------
 
  

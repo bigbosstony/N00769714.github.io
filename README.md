@@ -3,8 +3,6 @@ bibliography: SPPCitations.bib
 csl: apa.csl
 ---
 
- 
-
 SmartParkingLot Project
 =======================
 
@@ -30,12 +28,12 @@ integrating the knowledge and skills I have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
-PCB with sensors and actuators for \_detective car entry, taking pictures and
-trigger the parking gate_. The database will store the number plates. The mobile
-device functionality will include \_checking the plate number and parking time
-and will be further detailed in the mobile application proposal. I will be
-collaborating with the following company/department \_Humber Department of
-Public Safety_. In the winter semester I plan to form a group with the following
+PCB with sensors and actuators for detective car entry, taking pictures and
+trigger the parking gate. The database will store the number plates. The mobile
+device functionality will include checking the plate number and parking time and
+will be further detailed in the mobile application proposal. I will be
+collaborating with the following company/department Humber Department of Public
+Safety. In the winter semester I plan to form a group with the following
 students, who are also building similar hardware this term and working on the
 mobile application with me Thomas Chang, Alisha Singh Chauhan. The hardware will
 be completed in CENG 317 Hardware Production Techniques independently and the
@@ -45,11 +43,11 @@ as a member of a 2 or 3 student group.
 
 **Background**
 
-The problem solved by project is \_when we entering a parking lot, we need to
-stop to take a ticket and when we left we have to go the ticket machine to pay
-our ticket. By working with this project we take pictures and read the plate
-number automatically, so we can save more time and be environmental friendly.
-Background \_ANPR – Automatic number plate recognition is a technology for
+The problem solved by project is when we entering a parking lot, we need to stop
+to take a ticket and when we left we have to go the ticket machine to pay our
+ticket. By working with this project we take pictures and read the plate number
+automatically, so we can save more time and be environmental friendly.
+Background ANPR – Automatic number plate recognition is a technology for
 automatically reading vehicle number plates. And OpenALPR is a similar system,
 accuracy above 97 percent and it is open source. We can adjust OpenALPR to
 Raspberry Pi 2. HD camera for taking pictures at both Entry and Exit. Database
@@ -65,21 +63,22 @@ similar efforts.
 
  
 
-The first [@6213519]
+The first article I found discusses how Automatic license plate recognition
+(ALPR) extract vehicle license plate information from an image or a sequence of
+image.[@6213519]
 
  
 
-The second [@1516083]
+The second journal talks about why we use python programming language.[@1516083]
 
  
 
-The third [@1510592]
+The third article gives the information how to set up your own database by using
+PHP &  MySQL. [@1510592]
 
  
 
-The forth [@7030255]
-
- 
+The last one covers how to improve user experience on our application.[@7030255]
 
  
 
@@ -200,13 +199,15 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                                      |
 | **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                      |
 
+ 
+
 **Concluding remarks**
 
-This proposal presents a plan for providing an IoT solution for mini computer
-and black box for car. This is an opportunity to integrate the knowledge and
-skills developed in our program to create a collaborative IoT capstone project
-demonstrating my ability to learn how to support projects such as the initiative
-described by [3]. I request approval of this project.
+This proposal presents a plan for providing an IoT solution for Parking Lot.
+This is an opportunity to integrate the knowledge and skills developed in our
+program to create a collaborative IoT capstone project demonstrating my ability
+to learn how to support projects such as the initiative described by [3]. I
+request approval of this project.
 
  
 

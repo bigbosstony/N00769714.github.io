@@ -18,8 +18,13 @@ Table of Contents
 Proposal
 --------
 
-*Proposal for the SmartParkingLot Project\* Prepared by Yan Yu* Computer
-Engineering Technology Student\*
+*Proposal for the SmartParkingLot Project*
+
+*Prepared by Yan Yu*
+
+Computer Engineering Technology Student
+
+ 
 
 **Executive Summary** 
 
@@ -74,7 +79,7 @@ The second journal talks about why we use python programming language.[@1516083]
  
 
 The third article gives the information how to set up your own database by using
-PHP &  MySQL. [@1510592]
+PHP & MySQL. [@1510592]
 
  
 

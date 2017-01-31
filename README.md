@@ -226,7 +226,7 @@ request approval of this project.
 
 1. Introductionn
 ==================
-2. Software Requirements Specifications
+2. Software Requirements Specifications (SRS)
 ========================================
 2.1 Product Description
 ------------------------
@@ -247,5 +247,41 @@ elderly.
 PiGPS Tracker includes a Raspberry 2 Model B, a GPS module, battery power supply(Or rechargable battery pack), GPS
 Antenna(if needed), USB to TTL Adapter.
 
+2.2 System Perspective
+------------------------
 
+### 2.2.1 Product Perspective
+
+The product will be written by Python on the Raspberry Pi side, for the mobile application, It will support 
+android and ios platform.
+
+### 2.2.2 Product Functionality
+
+Tha main functionality of my product is to provide user the location of the device for user to track it. It will help them to 
+find their stolen car, or the people who needed help.
+
+### 2.2.3 Requirements
+
+Internet connection is needed to upload location information to the database. If you take it with you a battery supply will be required,
+or if you placed it in the car, power supply will be needed. To achieve the best performace of the product, a GPS antenneis recommended 
+to recieve a stable and strong signal of the GPS.
+
+2.3 Overall Description
+------------------------
+### 2.3.1 System Interface
+
+System Interface for my project includes GPS module, database server, and mobile application. When the system is power up, a python software should autamatically run as dufault, it will collect all the gps data and send it to the server if there is a internet connection. User can track down the real time location update by using the application on thier cellphone. User can also manege all the data from the server, they can decided to keep it or delete it.
+
+### 2.3.2 Database
+
+PiGPS Tracker uses Google's Firebase Database, which easily for android application development. One device can only connect to one root user who has all the authorization to the data. Root user can see all the data and decide to keep it or not. Other users will need autherization from the root user to access the data and can only see it for the last 24 hours. User will see a real map on their app which powered by Google Maps.
+
+### 2.3.3 Hardware
+
+The main process of this project is collec data by using the GPS module and then raspberry pi micro-computer will upload it to the server, mostly is the longitude and latitude.
+
+### 2.3.4 Software
+
+User needs a account to connect to the tracker. The first User conect to the device will be the root user, and one device can only have one root user, but user can have multiple devices.  Once the data is uploaded, user will see the tracker on thier map application.
+User (root) can manage all the data on the server, they will have a email address as the login name, a password more than 6 digit, they can also change it after sign up successfully.
 

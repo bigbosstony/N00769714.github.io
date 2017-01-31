@@ -38,7 +38,7 @@ Techniques independently and the application will be completed in CENG 319
 Software Project. These will be integrated together in the subsequent term in
 CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
 
-###**Background**
+### **Background**
 
 The problem solved by project is to prevent car stolen. With this portable
 tracking device that you can easily install in your car, if your car was stolen,
@@ -54,11 +54,14 @@ similar efforts.
 
  
 
-The first article I found discusses how. [@6034650]
+The first article I found discusses how to set up your own database by using PHP
+& MySQL.[@1510592]
 
-The second journal talks about.
+The second journal talks about GPS-Based Tracking Control for a Car-Like Wheeled
+Mobile.[@4598867]
 
-The third article gives the information.
+The third article gives the information about how to merge GPS information to a
+real map.[@5702361]
 
  
 
@@ -196,32 +199,33 @@ request approval of this project.
  
 
 **Abstract**
-============================
+============
 
 **Table of Contents**
------------------
+---------------------
 
 [Proposal](#proposal)
 
-[Excutive Summary](#excutive summary)
+[Excutive Summary](#excutive%20summary)
 
 [Background](#background)
 
 [Methodology](#methodology)
 
-[Concluding Remarks](#concluding remarks)
+[Concluding Remarks](#concluding%20remarks)
 
 [Abstract](#abstract)
 
 [1. Introduction](#Introduction)
 
-[2. Software Requirements Specification (SRS)](#Software Requirements Specification)
+[2. Software Requirements Specification
+(SRS)](#Software%20Requirements%20Specification)
 
-[2.1 Product Description](#product description)
+[2.1 Product Description](#product%20description)
 
 [2.1.1 Goal](#goal)
 
-[2.1.2 Target Users](#target users)
+[2.1.2 Target Users](#target%20users)
 
 [2.1.3 Overview Of Product](#)
 
@@ -243,65 +247,86 @@ request approval of this project.
 
 [2.3.4 Software](#)
 
-
 1. Introductionn
-==================
+================
+
 2. Software Requirements Specifications (SRS)
-========================================
+=============================================
+
 2.1 Product Description
-------------------------
+-----------------------
 
 ### 2.1.1 Goal
 
-This project will combine Raspberry Pi and a GPS module together to make a portable GPS tracking device.
-As the device is running, the gps module will keep updating the current location to the server, and users can 
-access those data by their smartphone.
+This project will combine Raspberry Pi and a GPS module together to make a
+portable GPS tracking device. As the device is running, the gps module will keep
+updating the current location to the server, and users can access those data by
+their smartphone.
 
 ### 2.1.2 Targeted Users
 
-This real time tracking devce is for vehicles track down, for people who go out for hiking or biking, for kids and 
-elderly.
+This real time tracking devce is for vehicles track down, for people who go out
+for hiking or biking, for kids and elderly.
 
 ### 2.1.3 Overview Of Product
 
-PiGPS Tracker includes a Raspberry 2 Model B, a GPS module, battery power supply(Or rechargable battery pack), GPS
-Antenna(if needed), USB to TTL Adapter.
+PiGPS Tracker includes a Raspberry 2 Model B, a GPS module, battery power
+supply(Or rechargable battery pack), GPS Antenna(if needed), USB to TTL Adapter.
 
 2.2 System Perspective
-------------------------
+----------------------
 
 ### 2.2.1 Product Perspective
 
-The product will be written by Python on the Raspberry Pi side, for the mobile application, It will support 
-android and ios platform.
+The product will be written by Python on the Raspberry Pi side, for the mobile
+application, It will support android and ios platform.
 
 ### 2.2.2 Product Functionality
 
-Tha main functionality of my product is to provide user the location of the device for user to track it. It will help them to 
-find their stolen car, or the people who needed help.
+Tha main functionality of my product is to provide user the location of the
+device for user to track it. It will help them to find their stolen car, or the
+people who needed help.
 
 ### 2.2.3 Requirements
 
-Internet connection is needed to upload location information to the database. If you take it with you a battery supply will be required,
-or if you placed it in the car, power supply will be needed. To achieve the best performace of the product, a GPS antenneis recommended 
-to recieve a stable and strong signal of the GPS.
+Internet connection is needed to upload location information to the database. If
+you take it with you a battery supply will be required, or if you placed it in
+the car, power supply will be needed. To achieve the best performace of the
+product, a GPS antenneis recommended to recieve a stable and strong signal of
+the GPS.
 
 2.3 Overall Description
-------------------------
+-----------------------
+
 ### 2.3.1 System Interface
 
-System Interface for my project includes GPS module, database server, and mobile application. When the system is power up, a python software should autamatically run as dufault, it will collect all the gps data and send it to the server if there is a internet connection. User can track down the real time location update by using the application on thier cellphone. User can also manege all the data from the server, they can decided to keep it or delete it.
+System Interface for my project includes GPS module, database server, and mobile
+application. When the system is power up, a python software should autamatically
+run as dufault, it will collect all the gps data and send it to the server if
+there is a internet connection. User can track down the real time location
+update by using the application on thier cellphone. User can also manege all the
+data from the server, they can decided to keep it or delete it.
 
 ### 2.3.2 Database
 
-PiGPS Tracker uses Google's Firebase Database, which easily for android application development. One device can only connect to one root user who has all the authorization to the data. Root user can see all the data and decide to keep it or not. Other users will need autherization from the root user to access the data and can only see it for the last 24 hours. User will see a real map on their app which powered by Google Maps.
+PiGPS Tracker uses Google's Firebase Database, which easily for android
+application development. One device can only connect to one root user who has
+all the authorization to the data. Root user can see all the data and decide to
+keep it or not. Other users will need autherization from the root user to access
+the data and can only see it for the last 24 hours. User will see a real map on
+their app which powered by Google Maps.
 
 ### 2.3.3 Hardware
 
-The main process of this project is collec data by using the GPS module and then raspberry pi micro-computer will upload it to the server, mostly is the longitude and latitude.
+The main process of this project is collec data by using the GPS module and then
+raspberry pi micro-computer will upload it to the server, mostly is the
+longitude and latitude.
 
 ### 2.3.4 Software
 
-User needs a account to connect to the tracker. The first User conect to the device will be the root user, and one device can only have one root user, but user can have multiple devices.  Once the data is uploaded, user will see the tracker on thier map application.
-User (root) can manage all the data on the server, they will have a email address as the login name, a password more than 6 digit, they can also change it after sign up successfully.
-
+User needs a account to connect to the tracker. The first User conect to the
+device will be the root user, and one device can only have one root user, but
+user can have multiple devices. Once the data is uploaded, user will see the
+tracker on thier map application. User (root) can manage all the data on the
+server, they will have a email address as the login name, a password more than 6
+digit, they can also change it after sign up successfully.

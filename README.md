@@ -8,13 +8,6 @@ PiGPS Tracker Project
 
 Projects website: <https://bigbosstony.github.io/>
 
-Table of Contents
-=================
-
-1.  [Proposal](#proposal)
-
-2.  [References](#references)
-
 Proposal
 --------
 
@@ -200,7 +193,20 @@ request approval of this project.
 
  
 
-References (Generated in pdf)
------------------------------
+**References (Generated in pdf)**
+
+ 
+
+Abstract (Executive Summary)
+============================
+
+Table of Contents
+-----------------
+
+[Proposal](#proposal)
+
+1.  Introduction
+
+2.  [Software Requirements Specification (SRS)](#references)
 
  

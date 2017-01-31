@@ -201,10 +201,10 @@ Abstract (Executive Summary)
 Table of Contents
 -----------------
 
-[Proposal](#proposal)
+[Proposal](#Proposal)
 
-1.  Introduction
+1.  [Introduction](#Introduction)
 
-2.  [Software Requirements Specification (SRS)](#references)
+2.  [Software Requirements Specification (SRS)](#Software Requirements Specification)
 
  

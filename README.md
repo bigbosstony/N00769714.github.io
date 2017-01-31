@@ -202,9 +202,18 @@ Table of Contents
 -----------------
 
 [Proposal](#proposal)
+[Excutive Summary](#excutive summary)
+[Background](#background)
+[Methodology](#methodology)
+[Concluding Remarks](#concluding remarks)
+[Abstract](#abstract)
 
-1.  [Introduction](#Introduction)
+[1. Introduction](#Introduction)
+[2. Software Requirements Specification (SRS)](#Software Requirements Specification)
 
-2.  [Software Requirements Specification (SRS)](#Software Requirements Specification)
+1. Introductionn
+==================
+2. Software Requirements Specifications
 
- 
+
+

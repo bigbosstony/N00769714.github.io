@@ -217,9 +217,35 @@ request approval of this project.
 
 [2. Software Requirements Specification (SRS)](#Software Requirements Specification)
 
+[2.1 Product Description](#product description)
+
+[2.1.1 Goal](#goal)
+
+[2.1.2 Target Users](#target users)
+
+
 1. Introductionn
 ==================
 2. Software Requirements Specifications
 ========================================
+2.1 Product Description
+------------------------
+
+### 2.1.1 Goal
+
+This project will combine Raspberry Pi and a GPS module together to make a portable GPS tracking device.
+As the device is running, the gps module will keep updating the current location to the server, and users can 
+access those data by their smartphone.
+
+### 2.1.2 Targeted Users
+
+This real time tracking devce is for vehicles track down, for people who go out for hiking or biking, for kids and 
+elderly.
+
+### 2.1.3 Overview Of Product
+
+PiGPS Tracker includes a Raspberry 2 Model B, a GPS module, battery power supply(Or rechargable battery pack), GPS
+Antenna(if needed), USB to TTL Adapter.
+
 
 

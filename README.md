@@ -19,7 +19,7 @@ Jan 30, 2017
 
 Computer Engineering Technology Student
 
-**Executive Summary** 
+### **Executive Summary** 
 
 As a student in the Computer Engineering Technology program, I will be
 integrating the knowledge and skills I have learned from our program into this
@@ -38,7 +38,7 @@ Techniques independently and the application will be completed in CENG 319
 Software Project. These will be integrated together in the subsequent term in
 CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
 
-**Background**
+###**Background**
 
 The problem solved by project is to prevent car stolen. With this portable
 tracking device that you can easily install in your car, if your car was stolen,
@@ -85,7 +85,7 @@ integrate them together as my capstone project.
 
  
 
-**Methodology**
+### **Methodology**
 
 This proposal is assigned in the first week of class and is due at the beginning
 of class in the second week of the fall semester. My coursework will focus on
@@ -181,7 +181,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 
  
 
-**Concluding remarks**
+### **Concluding remarks**
 
 This proposal presents a plan for providing an IoT solution for Parking Lot.
 This is an opportunity to integrate the knowledge and skills developed in our
@@ -191,7 +191,7 @@ request approval of this project.
 
  
 
-**References (Generated in pdf)**
+### **References (Generated in pdf)**
 
  
 

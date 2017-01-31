@@ -195,21 +195,21 @@ request approval of this project.
 
  
 
-Abstract
+**Abstract**
 ============================
 
-Table of Contents
+**Table of Contents**
 -----------------
 
 [Proposal](#proposal)
 
-[Excutive Summary](#excutivesummary)
+[Excutive Summary](#excutive summary)
 
 [Background](#background)
 
 [Methodology](#methodology)
 
-[Concluding Remarks](#concluding_remarks)
+[Concluding Remarks](#concluding remarks)
 
 [Abstract](#abstract)
 

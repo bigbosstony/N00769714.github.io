@@ -247,6 +247,8 @@ request approval of this project.
 
 [2.3.4 Software](#)
 
+[2.3.5 Web](#)
+
 1. Introductionn
 ================
 
@@ -313,13 +315,13 @@ PiGPS Tracker uses Google's Firebase Database, which easily for android
 application development. One device can only connect to one root user who has
 all the authorization to the data. Root user can see all the data and decide to
 keep it or not. Other users will need autherization from the root user to access
-the data and can only see it for the last 24 hours. User will see a real map on
+the data and can only see it from the last 24 hours. User will see a real map on
 their app which powered by Google Maps.
 
 ### 2.3.3 Hardware
 
-The main process of this project is collec data by using the GPS module and then
-raspberry pi micro-computer will upload it to the server, mostly is the
+The main process of this project is collect data by using the GPS module and then
+raspberry pi micro-computer will upload it to the server, most of the data is the
 longitude and latitude.
 
 ### 2.3.4 Software
@@ -329,4 +331,8 @@ device will be the root user, and one device can only have one root user, but
 user can have multiple devices. Once the data is uploaded, user will see the
 tracker on thier map application. User (root) can manage all the data on the
 server, they will have a email address as the login name, a password more than 6
-digit, they can also change it after sign up successfully.
+digit, they can also change it after the registration.
+
+### 2.3.5 Web 
+
+My website will have the same functionality of the application.

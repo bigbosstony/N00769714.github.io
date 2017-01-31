@@ -17,8 +17,11 @@ Table of Contents
 Proposal
 --------
 Jan 30, 2017
+
 *Proposal for the PiGPS  Tracker Project*
+
 *Prepared by Yan Yu*
+
 Computer Engineering Technology Student
 
 **Executive Summary** 

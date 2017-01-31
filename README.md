@@ -3,9 +3,8 @@ bibliography: SPPCitations.bib
 csl: apa.csl
 ---
 
-SmartParkingLot Project
+PiGPS Tracker Project
 =======================
-
 Projects website: <https://bigbosstony.github.io/>
 
 Table of Contents
@@ -17,14 +16,10 @@ Table of Contents
 
 Proposal
 --------
-
-*Proposal for the SmartParkingLot Project*
-
+Jan 30, 2017
+*Proposal for the PiGPS  Tracker Project*
 *Prepared by Yan Yu*
-
 Computer Engineering Technology Student
-
- 
 
 **Executive Summary** 
 

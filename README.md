@@ -195,7 +195,7 @@ request approval of this project.
 
  
 
-Abstract (Executive Summary)
+Abstract
 ============================
 
 Table of Contents
@@ -203,13 +203,13 @@ Table of Contents
 
 [Proposal](#proposal)
 
-[Excutive Summary](#excutive summary)
+[Excutive Summary](#excutivesummary)
 
 [Background](#background)
 
 [Methodology](#methodology)
 
-[Concluding Remarks](#concluding remarks)
+[Concluding Remarks](#concluding_remarks)
 
 [Abstract](#abstract)
 

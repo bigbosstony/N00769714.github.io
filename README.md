@@ -1,6 +1,6 @@
 ---
+bibliography: PiGPSCitations.bib
 csl: apa.csl
-bibliography: SPPCitations.bib
 ---
 
 PiGPS Tracker Project
@@ -54,9 +54,7 @@ similar efforts.
 
  
 
-The first article I found discusses how Automatic license plate recognition
-(ALPR) extract vehicle license plate information from an image or a sequence of
-image.[@6213519]
+The first article I found discusses how. [@6034650]
 
 The second journal talks about.
 

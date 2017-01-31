@@ -212,20 +212,19 @@ request approval of this project.
 
 [Methodology](#methodology)
 
-[Concluding Remarks](#concluding%20remarks)
+[Concluding Remarks](#)
 
 [Abstract](#abstract)
 
-[1. Introduction](#Introduction)
+[1. Introduction](#introduction)
 
-[2. Software Requirements Specification
-(SRS)](#Software%20Requirements%20Specification)
+[2. Software Requirements Specification (SRS)](#)
 
-[2.1 Product Description](#product%20description)
+[2.1 Product Description](#)
 
 [2.1.1 Goal](#goal)
 
-[2.1.2 Target Users](#target%20users)
+[2.1.2 Target Users](#)
 
 [2.1.3 Overview Of Product](#)
 
@@ -241,13 +240,13 @@ request approval of this project.
 
 [2.3.1 System Interface](#)
 
-[2.3.2 Database](#)
+[2.3.2 Database](#database)
 
-[2.3.3 Hardware](#)
+[2.3.3 Hardware](#hardware)
 
-[2.3.4 Software](#)
+[2.3.4 Software](#software)
 
-[2.3.5 Web](#)
+[2.3.5 Web](#web)
 
 1. Introductionn
 ================

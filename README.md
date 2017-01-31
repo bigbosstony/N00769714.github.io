@@ -65,18 +65,9 @@ The first article I found discusses how Automatic license plate recognition
 (ALPR) extract vehicle license plate information from an image or a sequence of
 image.[@6213519]
 
- 
+The second journal talks about.
 
-The second journal talks about why we use python programming language.[@1516083]
-
- 
-
-The third article gives the information how to set up your own database by using
-PHP & MySQL. [@1510592]
-
- 
-
-The last one covers how to improve user experience on our application.[@7030255]
+The third article gives the information.
 
  
 

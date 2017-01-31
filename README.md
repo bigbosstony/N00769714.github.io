@@ -1,10 +1,11 @@
 ---
-bibliography: SPPCitations.bib
 csl: apa.csl
+bibliography: SPPCitations.bib
 ---
 
 PiGPS Tracker Project
-=======================
+=====================
+
 Projects website: <https://bigbosstony.github.io/>
 
 Table of Contents
@@ -16,9 +17,10 @@ Table of Contents
 
 Proposal
 --------
+
 Jan 30, 2017
 
-*Proposal for the PiGPS  Tracker Project*
+*Proposal for the PiGPS Tracker Project*
 
 *Prepared by Yan Yu*
 
@@ -31,32 +33,21 @@ integrating the knowledge and skills I have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
-PCB with sensors and actuators for detective car entry, taking pictures and
-trigger the parking gate. The database will store the number plates. The mobile
-device functionality will include checking the plate number and parking time and
-will be further detailed in the mobile application proposal. I will be
-collaborating with the following company/department Humber Department of Public
-Safety. In the winter semester I plan to form a group with the following
-students, who are also building similar hardware this term and working on the
-mobile application with me Thomas Chang, Alisha Singh Chauhan. The hardware will
-be completed in CENG 317 Hardware Production Techniques independently and the
-application will be completed in CENG 319 Software Project. These will be
-integrated together in the subsequent term in CENG 355 Computer Systems Project
-as a member of a 2 or 3 student group.
+PCB with sensors and actuators for detecting the location by using a GPS module.
+The database will store the history of locations. The mobile device
+functionality will include a real time location tracking and will be further
+detailed in the mobile application proposal. I will be collaborating with the
+following company/department Humber Department of Public Safety. In the winter
+semester I have no plan to form a group with the following students, who are
+also building similar hardware this term and working on the mobile application
+with me. The hardware will be completed in CENG 317 Hardware Production
+Techniques independently and the application will be completed in CENG 319
+Software Project. These will be integrated together in the subsequent term in
+CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
 
 **Background**
 
-The problem solved by project is when we entering a parking lot, we need to stop
-to take a ticket and when we left we have to go the ticket machine to pay our
-ticket. By working with this project we take pictures and read the plate number
-automatically, so we can save more time and be environmental friendly.
-Background ANPR – Automatic number plate recognition is a technology for
-automatically reading vehicle number plates. And OpenALPR is a similar system,
-accuracy above 97 percent and it is open source. We can adjust OpenALPR to
-Raspberry Pi 2. HD camera for taking pictures at both Entry and Exit. Database
-used to store plate numbers and then calculate the duration of how long the car
-has been parking. Infrared ray to detective the car in the entry or exit. Driver
-could pay at the exit by using Interac™ Card, smartphone with NFC or cash.
+The problem solved by project is .
 
  
 

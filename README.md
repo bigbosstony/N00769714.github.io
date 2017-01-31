@@ -47,7 +47,11 @@ CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
 
 **Background**
 
-The problem solved by project is .
+The problem solved by project is to prevent car stolen. With this portable
+tracking device that you can easily install in your car, if your car was stolen,
+you can track your car using this tracker, and it will have a real time tracking
+system which you can access on your mobile app. This will help the police to
+catch the thief faster.
 
  
 

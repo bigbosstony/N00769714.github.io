@@ -295,6 +295,7 @@ a Phillips Hue, and when it's off-campus, the light goes off.
 1.3 Definitions, acronyms, and abbreviations
 ----------------------------------------------
 GPS: Global Positioning System
+
 Phillips Hue: Smart connected lighting
 
 

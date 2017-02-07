@@ -276,14 +276,26 @@ work station.
 
 1.1 Purpose
 ------------
-
+The purpose of this documentation is to give a description of the "PiGPS Tracker" 
+in both hardware requirements and software side. It will contain a explaination 
+with the application.
 
 1.2 Scope
 ----------
+The main use of PiGPS Tracker is to help you to find your car.
+In beta phase, after set up the system, the workstation will receive a location 
+coordinate. This data is from a database where the PiGPS Tracker sented to. The 
+database will keep updating in every 60 seconds.
+In final phase of PiTracker will communicate with the workstation at school.
+When the PiTracker's location is detected at school, the workstation will triger 
+a Phillips Hue, and when it's off-campus, the light goes off.
+
 
 
 1.3 Definitions, acronyms, and abbreviations
----------------------------------------------
+----------------------------------------------
+GPS: Global Positioning System
+Phillips Hue: Smart connected lighting
 
 
 2. Software Requirements Specifications (SRS)

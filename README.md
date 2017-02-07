@@ -204,13 +204,19 @@ to learn how to support projects such as the initiative described by [3]. I
 request approval of this project.
 
  
-
 ### **References (Generated in pdf)**
 
- 
 
-**Abstract**
-============
+**Abstract (Executive Summary)**
+=================================
+
+My PiGPS Tracker is a morden tracking product that can easily put in the car. By
+keeping this ths device,  it will not only as a general tracker for your car, but 
+also a locator to help you find your car when you lost in a mass parking lot.
+As a real time tracking device, it will syncronized the location information to a 
+work station.
+
+
 
 **Table of Contents**
 ---------------------
@@ -225,9 +231,15 @@ request approval of this project.
 
 [Concluding Remarks](#)
 
-[Abstract](#abstract)
+[Abstract (Executive Summary)](#abstract)
 
 [1. Introduction](#introduction)
+
+[1.1 Purpose](#purpose)
+
+[1.2 Scope](#scope)
+
+[1.3 Definitions, acronyms, and abbreviations](#Definitions, acronyms, and abbreviations)
 
 [2. Software Requirements Specification (SRS)](#)
 
@@ -261,6 +273,18 @@ request approval of this project.
 
 1. Introductionn
 ================
+
+1.1 Purpose
+------------
+
+
+1.2 Scope
+----------
+
+
+1.3 Definitions, acronyms, and abbreviations
+---------------------------------------------
+
 
 2. Software Requirements Specifications (SRS)
 =============================================

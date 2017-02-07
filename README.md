@@ -8,7 +8,7 @@ PiGPS Tracker Project
 
 Projects website: <https://bigbosstony.github.io/>
 
-Declaration of solo Authorship
+Declaration of Sole Authorship
 ===============================
 
 I conform that  that this work submitted for assessment is my own and is expressed in my own words. Any uses that was used in this

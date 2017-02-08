@@ -277,18 +277,20 @@ work station.
 1.1 Purpose
 ------------
 The purpose of this documentation is to give a description of the "PiGPS Tracker" 
-in both hardware requirements and software side. It will contain a explaination 
-with the application.
+in both hardware requirements and software side. It will also contain a explaination 
+of the application.
 
 1.2 Scope
 ----------
 The main use of PiGPS Tracker is to help you to find your car.
+
 In beta phase, after set up the system, the workstation will receive a location 
 coordinate. This data is from a database where the PiGPS Tracker sented to. The 
 database will keep updating in every 60 seconds.
-In final phase of PiTracker will communicate with the workstation at school.
-When the PiTracker's location is detected at school, the workstation will triger 
-a Phillips Hue, and when it's off-campus, the light goes off.
+
+In final phase of PiGPS Tracker will communicate with the workstation at school.
+When the PiGPS Tracker's location is detected by the workstation at school, the 
+workstation will triger a Phillips Hue, and when it's off-campus, the lights out.
 
 
 

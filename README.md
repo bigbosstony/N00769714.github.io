@@ -269,7 +269,6 @@ work station.
 
 [2.3.4 Software](#software)
 
-[2.3.5 Web](#web)
 
 1. Introductionn
 ================
@@ -381,7 +380,3 @@ user can have multiple devices. Once the data is uploaded, user will see the
 tracker on thier map application. User (root) can manage all the data on the
 server, they will have a email address as the login name, a password more than 6
 digit, they can also change it after the registration.
-
-### 2.3.5 Web 
-
-My website will have the same functionality of the application.

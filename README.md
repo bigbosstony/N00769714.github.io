@@ -3,17 +3,18 @@ bibliography: PiGPSCitations.bib
 csl: apa.csl
 ---
 
-PiGPS Tracker Project
-=====================
+PiHue Project
+=============
 
 Projects website: <https://bigbosstony.github.io/>
 
 Declaration of Sole Authorship
-===============================
+==============================
 
-I conform that  that this work submitted for assessment is my own and is expressed in my own words. Any uses that was used in this
-documents that came from any other authors were acknowledged where their works were used. A list of references are included in this
-document.
+I conform that that this work submitted for assessment is my own and is
+expressed in my own words. Any uses that was used in this documents that came
+from any other authors were acknowledged where their works were used. A list of
+references are included in this document.
 
 Yan Yu
 
@@ -24,7 +25,7 @@ Proposal
 
 Jan 30, 2017
 
-*Proposal for the PiGPS Tracker Project*
+*Proposal for the PiHue Project*
 
 *Prepared by Yan Yu*
 
@@ -37,8 +38,8 @@ integrating the knowledge and skills I have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
-PCB with sensors and actuators for detecting the location by using a GPS module.
-The database will store the history of locations. The mobile device
+PCB with sensors and actuators for detecting the location by using a GPS on the
+smartphone. The database will store the history of locations. The mobile device
 functionality will include a real time location tracking and will be further
 detailed in the mobile application proposal. I will be collaborating with the
 following company/department Humber Department of Public Safety. In the winter
@@ -51,17 +52,14 @@ CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
 
 ### **Background**
 
-The problem solved by project is to prevent car stolen. With this portable
-tracking device that you can easily install in your car, if your car was stolen,
-you can track your car using this tracker, and it will have a real time tracking
-system which you can access on your mobile app. This will help the police to
-catch the thief faster.
+By using this project, you can automatically turn on your lamp when you get
+home.
 
  
 
 I have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content”[1] and have found and read [2] which provides insight into
-similar efforts.
+Subscribed Content” and have found and read which provides insight into similar
+efforts.
 
  
 
@@ -200,23 +198,17 @@ important to start tasks as soon as possible to be able to meet deadlines.
 This proposal presents a plan for providing an IoT solution for Parking Lot.
 This is an opportunity to integrate the knowledge and skills developed in our
 program to create a collaborative IoT capstone project demonstrating my ability
-to learn how to support projects such as the initiative described by [3]. I
-request approval of this project.
-
- 
-### **References (Generated in pdf)**
-
+to learn how to support projects such as the initiative described by . I request
+approval of this project.
 
 **Abstract (Executive Summary)**
-=================================
+================================
 
 My PiGPS Tracker is a morden tracking product that can easily put in the car. By
-keeping this ths device,  it will not only as a general tracker for your car, but 
-also a locator to help you find your car when you lost in a mass parking lot.
-As a real time tracking device, it will syncronized the location information to a 
+keeping this ths device, it will not only as a general tracker for your car, but
+also a locator to help you find your car when you lost in a mass parking lot. As
+a real time tracking device, it will syncronized the location information to a
 work station.
-
-
 
 **Table of Contents**
 ---------------------
@@ -239,7 +231,8 @@ work station.
 
 [1.2 Scope](#scope)
 
-[1.3 Definitions, acronyms, and abbreviations](#Definitions, acronyms, and abbreviations)
+[1.3 Definitions, acronyms, and
+abbreviations](#Definitions,%20acronyms,%20and%20abbreviations)
 
 [2. Software Requirements Specification (SRS)](#)
 
@@ -269,36 +262,36 @@ work station.
 
 [2.3.4 Software](#software)
 
-
 1. Introductionn
 ================
 
 1.1 Purpose
-------------
-The purpose of this documentation is to give a description of the "PiGPS Tracker" 
-in both hardware requirements and software side. It will also contain a explaination 
-of the application.
+-----------
+
+The purpose of this documentation is to give a description of the "PiGPS
+Tracker" in both hardware requirements and software side. It will also contain a
+explaination of the application.
 
 1.2 Scope
-----------
+---------
+
 The main use of PiGPS Tracker is to help you to find your car.
 
-In beta phase, after set up the system, the workstation will receive a location 
-coordinate. This data is from a database where the PiGPS Tracker sented to. The 
+In beta phase, after set up the system, the workstation will receive a location
+coordinate. This data is from a database where the PiGPS Tracker sented to. The
 database will keep updating in every 60 seconds.
 
 In final phase of PiGPS Tracker will communicate with the workstation at school.
-When the PiGPS Tracker's location is detected by the workstation at school, the 
-workstation will triger a Phillips Hue, and when it's off-campus, the lights out.
-
-
+When the PiGPS Tracker's location is detected by the workstation at school, the
+workstation will triger a Phillips Hue, and when it's off-campus, the lights
+out.
 
 1.3 Definitions, acronyms, and abbreviations
-----------------------------------------------
+--------------------------------------------
+
 GPS: Global Positioning System
 
 Phillips Hue: Smart connected lighting
-
 
 2. Software Requirements Specifications (SRS)
 =============================================
@@ -368,9 +361,9 @@ their app which powered by Google Maps.
 
 ### 2.3.3 Hardware
 
-The main process of this project is collect data by using the GPS module and then
-raspberry pi micro-computer will upload it to the server, most of the data is the
-longitude and latitude.
+The main process of this project is collect data by using the GPS module and
+then raspberry pi micro-computer will upload it to the server, most of the data
+is the longitude and latitude.
 
 ### 2.3.4 Software
 
@@ -380,3 +373,31 @@ user can have multiple devices. Once the data is uploaded, user will see the
 tracker on thier map application. User (root) can manage all the data on the
 server, they will have a email address as the login name, a password more than 6
 digit, they can also change it after the registration.
+
+2.4 Build Instruction
+---------------------
+
+### 2.4.1 Introduction
+
+### 2.4.2 Preparation
+
+### 2.4.3 Cost of Material
+
+### 2.4.4 Time Commitment
+
+### 2.4.5 Software Installation
+
+### 2.4.6 Program Testing 
+
+ 
+
+3. Conclusion
+=============
+
+4. Recommendation
+=================
+
+5. Reference
+============
+
+  \#\#\# **References (Generated in pdf)**

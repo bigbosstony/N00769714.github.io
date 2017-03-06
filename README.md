@@ -192,20 +192,17 @@ important to start tasks as soon as possible to be able to meet deadlines.
 
 ### **Concluding remarks**
 
-This proposal presents a plan for providing an IoT solution for Parking Lot.
-This is an opportunity to integrate the knowledge and skills developed in our
-program to create a collaborative IoT capstone project demonstrating my ability
-to learn how to support projects such as the initiative described by . I request
-approval of this project.
+This proposal presents a plan for providing a smart home accessories. This is an
+opportunity to integrate the knowledge and skills developed in our program to
+create a collaborative IoT capstone project demonstrating my ability to learn
+how to support projects such as the initiative described by . I request approval
+of this project.
 
 **Abstract (Executive Summary)**
 ================================
 
-My PiGPS Tracker is a morden tracking product that can easily put in the car. By
-keeping this ths device, it will not only as a general tracker for your car, but
-also a locator to help you find your car when you lost in a mass parking lot. As
-a real time tracking device, it will syncronized the location information to a
-work station.
+Philips Hue starter kit is a great product. I want to discover the
+possibilities.
 
 **Table of Contents**
 ---------------------
@@ -372,11 +369,58 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 ### 2.4.5 Time Commitment
 
- 
+| **Todo**                                    | **Time Required **                                                                                           |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Hue library and other software installation | (1 hr) I take this amount of time to find out the proper library for the system.                             |
+| Hue bridge connection                       | (1 hr) I using meethue.com to find out the unique ID for the bridge and testing the command with the bridge. |
+| Sample code testing                         | (30 mins) Error fixing.                                                                                      |
 
 ### 2.4.6 Software Installation
 
-### 2.4.7 Program Testing
+Two kinds of libraries for pi I found is `pyhue` and `phue`.
+
+**pyhue: **`pip install pyhue`
+
+**phue:** `sudo easy_install phue` or `pip install phue`
+
+### 2.4.7 System Setup
+
+Using [www.meethue.com/api/nupnp](www.meethue.com/api/nupnp) to discover the IP
+address and ID of the bridge.
+
+Go to
+[http://ip_address_you_found/debug/clip.html](http://ip_address_you_found/debug/clip.html).
+
+Address `http://<bridge ip address>/api`
+
+URL `/api`
+
+Body `{“devicetype”:”my_hue_app#pi tony”}`
+
+Press the button on the bridge and then press **POST** button to generate the
+unique ID.
+
+Address `http://<bridge ip address>/api/unique_id/lights`
+
+Body
+
+**GET**
+
+Address `http://<bridge ip address>/api/unique_id/lights/1` \\
+
+Body
+
+**GET**
+
+Address `http://<bridge ip address>/api/unique_id/lights/1/state`
+
+Body `{“on”:false}`
+
+**PUT**
+
+### 2.4.8 Program Testing
+
+ 
 
  
 

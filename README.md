@@ -37,18 +37,15 @@ As a student in the Computer Engineering Technology program, I will be
 integrating the knowledge and skills I have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
-mobile device application. The internet connected hardware will include a custom
-PCB with sensors and actuators for detecting the location by using a GPS on the
-smartphone. The database will store the history of locations. The mobile device
-functionality will include a real time location tracking and will be further
-detailed in the mobile application proposal. I will be collaborating with the
-following company/department Humber Department of Public Safety. In the winter
-semester I have no plan to form a group with the following students, who are
-also building similar hardware this term and working on the mobile application
-with me. The hardware will be completed in CENG 317 Hardware Production
-Techniques independently and the application will be completed in CENG 319
-Software Project. These will be integrated together in the subsequent term in
-CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
+mobile device application. This project mainly focus on the connection between
+raspberry pi and Philips Hue. I will be collaborating with the following
+company/department Humber Department of Public Safety. In the winter semester I
+have no plan to form a group with the following students, who are also building
+similar hardware this term and working on the mobile application with me. The
+hardware will be completed in CENG 317 Hardware Production Techniques
+independently and the application will be completed in CENG 319 Software
+Project. These will be integrated together in the subsequent term in CENG 355
+Computer Systems Project as a member of a 2 or 3 student group.
 
 ### **Background**
 
@@ -262,34 +259,31 @@ abbreviations](#Definitions,%20acronyms,%20and%20abbreviations)
 
 [2.3.4 Software](#software)
 
+2.4 Build Instructions
+
 1. Introductionn
 ================
 
 1.1 Purpose
 -----------
 
-The purpose of this documentation is to give a description of the "PiGPS
-Tracker" in both hardware requirements and software side. It will also contain a
+The purpose of this documentation is to give a description of the “PiHue" in
+both hardware requirements and software side. It will also contain a
 explaination of the application.
 
 1.2 Scope
 ---------
 
-The main use of PiGPS Tracker is to help you to find your car.
+The main use of PiHue is to help you control your lights in your home.
 
-In beta phase, after set up the system, the workstation will receive a location
-coordinate. This data is from a database where the PiGPS Tracker sented to. The
-database will keep updating in every 60 seconds.
+In beta phase, after set up the system, you can easily control your Hue through
+raspberry pi.
 
-In final phase of PiGPS Tracker will communicate with the workstation at school.
-When the PiGPS Tracker's location is detected by the workstation at school, the
-workstation will triger a Phillips Hue, and when it's off-campus, the lights
-out.
+In final phase of PiHue, not only raspberry pi can control Hue, but also your
+smartphone.
 
 1.3 Definitions, acronyms, and abbreviations
 --------------------------------------------
-
-GPS: Global Positioning System
 
 Phillips Hue: Smart connected lighting
 
@@ -301,20 +295,17 @@ Phillips Hue: Smart connected lighting
 
 ### 2.1.1 Goal
 
-This project will combine Raspberry Pi and a GPS module together to make a
-portable GPS tracking device. As the device is running, the gps module will keep
-updating the current location to the server, and users can access those data by
-their smartphone.
+This project will combine Raspberry Pi, Philips Hue and the bridge, connect all
+the device by internet. Control lights using smartphone.
 
 ### 2.1.2 Targeted Users
 
-This real time tracking devce is for vehicles track down, for people who go out
-for hiking or biking, for kids and elderly.
+Tech-fans, with modern technology to build smart home accessories.
 
 ### 2.1.3 Overview Of Product
 
-PiGPS Tracker includes a Raspberry 2 Model B, a GPS module, battery power
-supply(Or rechargable battery pack), GPS Antenna(if needed), USB to TTL Adapter.
+PiHue includes a Raspberry 2 Model B, Philips Hue bulbs, bridge, an android or
+iOS device and a router.
 
 2.2 System Perspective
 ----------------------
@@ -326,68 +317,66 @@ application, It will support android and ios platform.
 
 ### 2.2.2 Product Functionality
 
-Tha main functionality of my product is to provide user the location of the
-device for user to track it. It will help them to find their stolen car, or the
-people who needed help.
+Tha main functionality of my product is to provide user to control lights in
+your own home.
 
 ### 2.2.3 Requirements
 
-Internet connection is needed to upload location information to the database. If
-you take it with you a battery supply will be required, or if you placed it in
-the car, power supply will be needed. To achieve the best performace of the
-product, a GPS antenneis recommended to recieve a stable and strong signal of
-the GPS.
+Internet connection is needed to send command and script to bridge to turn on or
+off the lights. A router will be needed to build a secure line for the bridge.
 
 2.3 Overall Description
 -----------------------
 
 ### 2.3.1 System Interface
 
-System Interface for my project includes GPS module, database server, and mobile
-application. When the system is power up, a python software should autamatically
-run as dufault, it will collect all the gps data and send it to the server if
-there is a internet connection. User can track down the real time location
-update by using the application on thier cellphone. User can also manege all the
-data from the server, they can decided to keep it or delete it.
+System Interface for my project includes raspberry pi and a smartphone. A web
+based database is for mobile connection. GPS module will be simulated by the
+smartphone.
 
 ### 2.3.2 Database
 
-PiGPS Tracker uses Google's Firebase Database, which easily for android
-application development. One device can only connect to one root user who has
-all the authorization to the data. Root user can see all the data and decide to
-keep it or not. Other users will need autherization from the root user to access
-the data and can only see it from the last 24 hours. User will see a real map on
-their app which powered by Google Maps.
+Website using JSON.
 
 ### 2.3.3 Hardware
 
-The main process of this project is collect data by using the GPS module and
-then raspberry pi micro-computer will upload it to the server, most of the data
-is the longitude and latitude.
+The main process of this project is to understand communication of Hue bridge.
 
 ### 2.3.4 Software
 
-User needs a account to connect to the tracker. The first User conect to the
-device will be the root user, and one device can only have one root user, but
-user can have multiple devices. Once the data is uploaded, user will see the
-tracker on thier map application. User (root) can manage all the data on the
-server, they will have a email address as the login name, a password more than 6
-digit, they can also change it after the registration.
+User will use raspberry pi and smartphone to integrate with the bridge.
 
 2.4 Build Instruction
 ---------------------
 
 ### 2.4.1 Introduction
 
+Understanding how Philips Hue works, and hack Hue bridge with raspberry pi then
+set up connection with smartphone. This build instruction adopted from Randy
+Reed from huckster.io.
+
 ### 2.4.2 Preparation
 
-### 2.4.3 Cost of Material
+Start up with Philips Hue API, you can check out the API from Philips. Also a
+hue library for raspberry pi is needed. phue and pyhue.
 
-### 2.4.4 Time Commitment
+### 2.4.3 System Diagram
 
-### 2.4.5 Software Installation
+INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
-### 2.4.6 Program Testing 
+### 2.4.4 Cost of Material
+
+| Raspberry pi 2 Model B            | \$49.99 |
+|-----------------------------------|---------|
+| Philips Hue White A19 Starter Kit | \$69.99 |
+
+### 2.4.5 Time Commitment
+
+ 
+
+### 2.4.6 Software Installation
+
+### 2.4.7 Program Testing
 
  
 

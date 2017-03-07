@@ -349,8 +349,9 @@ User will use raspberry pi and smartphone to integrate with the bridge.
 ### 2.4.1 Introduction
 
 Understanding how Philips Hue works, and hack Hue bridge with raspberry pi then
-set up connection with smartphone. This build instruction adopted from Randy
-Reed from huckster.io.
+set up connection with smartphone. This build instruction adopted from [Randy
+Reed](https://www.hackster.io/randywreed) from
+[hackster](https://www.hackster.io/randywreed/unlock-phillips-hue-with-ifttt-maker-raspberry-pi-e768bc).
 
 ### 2.4.2 Preparation
 
@@ -369,7 +370,7 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 ### 2.4.5 Time Commitment
 
-| **Todo**                                    | **Time Required **                                                                                           |
+| **Todo**                                    | **Time Required**                                                                                            |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Hue library and other software installation | (1 hr) I take this amount of time to find out the proper library for the system.                             |
 | Hue bridge connection                       | (1 hr) I using meethue.com to find out the unique ID for the bridge and testing the command with the bridge. |
@@ -377,9 +378,11 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 ### 2.4.6 Software Installation
 
-Two kinds of libraries for pi I found is `pyhue` and `phue`.
+Two kinds of libraries for pi I found is
+[pyhue](https://github.com/aleroddepaz/pyhue) and
+[phue](https://github.com/studioimaginaire/phue).
 
-**pyhue: **`pip install pyhue`
+**pyhue:** `pip install pyhue`
 
 **phue:** `sudo easy_install phue` or `pip install phue`
 
@@ -388,8 +391,7 @@ Two kinds of libraries for pi I found is `pyhue` and `phue`.
 Using [www.meethue.com/api/nupnp](www.meethue.com/api/nupnp) to discover the IP
 address and ID of the bridge.
 
-Go to
-[http://ip_address_you_found/debug/clip.html](http://ip_address_you_found/debug/clip.html).
+Go to <http://ip_address_you_found/debug/clip.html>.
 
 Address `http://<bridge ip address>/api`
 

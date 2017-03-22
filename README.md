@@ -182,7 +182,7 @@ create a collaborative IoT capstone project demonstrating my ability to learn
 how to support projects such as the initiative described by . I request approval
 of this project.
 
-**Abstract (Executive Summary)**
+**Abstract**
 ================================
 
 Philips Hue starter kit is a great product. I want to discover the
@@ -201,7 +201,7 @@ possibilities.
 
 [Concluding Remarks](https://github.com/bigbosstony/bigbosstony.github.io#concluding-remarks)
 
-[Abstract (Executive Summary)](https://github.com/bigbosstony/bigbosstony.github.io#abstract-(executive-summary))
+[Abstract](https://github.com/bigbosstony/bigbosstony.github.io#abstract)
 
 [1.0 Introduction](https://github.com/bigbosstony/bigbosstony.github.io#10-introduction)
 
@@ -211,7 +211,7 @@ possibilities.
 
 [1.3 Definitions, acronyms, and abbreviations](https://github.com/bigbosstony/bigbosstony.github.io#13-definitions,-acronyms,-and-abbreviations)
 
-[2.0 Software Requirements Specification (SRS)](https://github.com/bigbosstony/bigbosstony.github.io#20-software-requirements-specification-(srs))
+[2.0 Software Requirements Specification](https://github.com/bigbosstony/bigbosstony.github.io#20-software-requirements-specification)
 
 [2.1 Product Description](https://github.com/bigbosstony/bigbosstony.github.io#21-product-description)
 
@@ -289,7 +289,7 @@ smartphone.
 
 Phillips Hue: Smart connected lighting
 
-2.0 Software Requirements Specifications (SRS)
+2.0 Software Requirements Specifications
 ==============================================
 
 2.1 Product Description

@@ -260,8 +260,8 @@ abbreviations](#Definitions,%20acronyms,%20and%20abbreviations)
 2.4 Build Instructions
  
 
-1 Introduction
----------------
+1.0 Introduction
+-----------------
 
 1.1 Purpose
 -----------
@@ -286,8 +286,8 @@ smartphone.
 
 Phillips Hue: Smart connected lighting
 
-2. Software Requirements Specifications (SRS)
-=============================================
+2.0 Software Requirements Specifications (SRS)
+==============================================
 
 2.1 Product Description
 -----------------------
@@ -428,13 +428,13 @@ Body `{“on”:false}`
 
  
 
-3. Conclusion
-=============
+3.0 Conclusion
+==============
 
-4. Recommendation
-=================
+4.0 Recommendation
+===================
 
-5. Reference
-============
+5.0 Reference
+==============
 
   \#\#\# **References (Generated in pdf)**

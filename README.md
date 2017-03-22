@@ -256,10 +256,31 @@ possibilities.
 [2.3.4 Software](https://github.com/bigbosstony/bigbosstony.github.io#234-software)
 
 [2.4 Build Instructions](https://github.com/bigbosstony/bigbosstony.github.io#24-build-instructions)
- 
+
+[2.4.1 Introduction](https://github.com/bigbosstony/bigbosstony.github.io#241-introduction)
+
+[2.4.2 Preparation](https://github.com/bigbosstony/bigbosstony.github.io#242-preparation)
+
+[2.4.3 System Diagram](https://github.com/bigbosstony/bigbosstony.github.io#243-system-diagram)
+
+[2.4.4 Cost of Material](https://github.com/bigbosstony/bigbosstony.github.io#244-cost-of-material)
+
+[2.4.5 Time Commitment](https://github.com/bigbosstony/bigbosstony.github.io#245-time-commitment)
+
+[2.4.6 Software Installation](https://github.com/bigbosstony/bigbosstony.github.io#246-software-installation)
+
+[2.4.7 System Setup](https://github.com/bigbosstony/bigbosstony.github.io#247-system-setup)
+
+[2.4.8 Program Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
+
+[3.0 Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)
+
+[4.0 Recommendation](https://github.com/bigbosstony/bigbosstony.github.io#40-recommendation)
+
+[5.0 Reference](https://github.com/bigbosstony/bigbosstony.github.io#50-reference)
 
 1.0 Introduction
------------------
+================
 
 1.1 Purpose
 -----------

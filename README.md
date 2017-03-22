@@ -209,55 +209,53 @@ possibilities.
 
 [Proposal](https://github.com/bigbosstony/bigbosstony.github.io#proposal)
 
-[Excutive Summary](#excutive%20summary)
+[Excutive Summary](https://github.com/bigbosstony/bigbosstony.github.io#excutive-summary)
 
-[Background](#background)
+[Background](https://github.com/bigbosstony/bigbosstony.github.io#background)
 
-[Methodology](#methodology)
+[Methodology](https://github.com/bigbosstony/bigbosstony.github.io#methodology)
 
-[Concluding Remarks](#)
+[Concluding Remarks](https://github.com/bigbosstony/bigbosstony.github.io#concluding-remarks)
 
-[Abstract (Executive Summary)](#abstract)
+[Abstract (Executive Summary)](https://github.com/bigbosstony/bigbosstony.github.io#abstract-(executive-summary))
 
-[1.
-Introduction](https://github.com/bigbosstony/bigbosstony.github.io#1-introduction)
+[1.0 Introduction](https://github.com/bigbosstony/bigbosstony.github.io#10-introduction)
 
-[1.1 Purpose](#1.1%20Purpose)
+[1.1 Purpose](https://github.com/bigbosstony/bigbosstony.github.io#11-purposel)
 
-[1.2 Scope](#scope)
+[1.2 Scope](https://github.com/bigbosstony/bigbosstony.github.io#12scope)
 
-[1.3 Definitions, acronyms, and
-abbreviations](#Definitions,%20acronyms,%20and%20abbreviations)
+[1.3 Definitions, acronyms, and abbreviations](https://github.com/bigbosstony/bigbosstony.github.io#13-definitions,-acronyms,-and-abbreviations)
 
-[2. Software Requirements Specification (SRS)](#)
+[2.0 Software Requirements Specification (SRS)](https://github.com/bigbosstony/bigbosstony.github.io#20-software-requirements-specification-(srs))
 
-[2.1 Product Description](#)
+[2.1 Product Description](https://github.com/bigbosstony/bigbosstony.github.io#21-product-description)
 
-[2.1.1 Goal](#goal)
+[2.1.1 Goal](https://github.com/bigbosstony/bigbosstony.github.io#211-goal)
 
-[2.1.2 Target Users](#)
+[2.1.2 Target Users](https://github.com/bigbosstony/bigbosstony.github.io#212-target-users)
 
-[2.1.3 Overview Of Product](#)
+[2.1.3 Overview Of Product](https://github.com/bigbosstony/bigbosstony.github.io#213overview-of-product)
 
-[2.2 System Perspective](#)
+[2.2 System Perspective](https://github.com/bigbosstony/bigbosstony.github.io#22-system-perspective)
 
-[2.2.1 Product Perspective](#)
+[2.2.1 Product Perspective](https://github.com/bigbosstony/bigbosstony.github.io#221-product-perspective)
 
-[2.2.2 Product Functionality](#)
+[2.2.2 Product Functionality](https://github.com/bigbosstony/bigbosstony.github.io#222-product-functionality)
 
-[2.2.3 Requirements](#)
+[2.2.3 Requirements](https://github.com/bigbosstony/bigbosstony.github.io#223-requirements)
 
-[2.3 Overall Description](#)
+[2.3 Overall Description](https://github.com/bigbosstony/bigbosstony.github.io#23-overall-description)
 
-[2.3.1 System Interface](#)
+[2.3.1 System Interface](https://github.com/bigbosstony/bigbosstony.github.io#231-system-interface)
 
-[2.3.2 Database](#database)
+[2.3.2 Database](https://github.com/bigbosstony/bigbosstony.github.io#232-database)
 
-[2.3.3 Hardware](#hardware)
+[2.3.3 Hardware](https://github.com/bigbosstony/bigbosstony.github.io#233-hardware)
 
-[2.3.4 Software](#software)
+[2.3.4 Software](https://github.com/bigbosstony/bigbosstony.github.io#234-software)
 
-2.4 Build Instructions
+[2.4 Build Instructions](https://github.com/bigbosstony/bigbosstony.github.io#24-build-instructions)
  
 
 1.0 Introduction

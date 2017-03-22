@@ -189,7 +189,7 @@ Philips Hue starter kit is a great product. I want to discover the
 possibilities.
 
 **Table of Contents**
----------------------
+=======================
 
 [Proposal](https://github.com/bigbosstony/bigbosstony.github.io#proposal)
 

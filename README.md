@@ -219,9 +219,10 @@ possibilities.
 
 [Abstract (Executive Summary)](#abstract)
 
-[1. Introduction](https://github.com/bigbosstony/bigbosstony.github.io#1-introduction)
+[1.
+Introduction](https://github.com/bigbosstony/bigbosstony.github.io#1-introduction)
 
-[1.1 Purpose](#1.1 Purpose )
+[1.1 Purpose](#1.1%20Purpose)
 
 [1.2 Scope](#scope)
 
@@ -258,8 +259,10 @@ abbreviations](#Definitions,%20acronyms,%20and%20abbreviations)
 
 2.4 Build Instructions
 
-1. Introductionn
-================
+1. Introduction
+---------------
+
+ 
 
 1.1 Purpose
 -----------

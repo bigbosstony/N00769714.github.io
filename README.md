@@ -260,8 +260,8 @@ abbreviations](#Definitions,%20acronyms,%20and%20abbreviations)
 2.4 Build Instructions
  
 
-Introduction
-------------
+1 Introduction
+---------------
 
 1.1 Purpose
 -----------

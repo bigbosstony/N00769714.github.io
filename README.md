@@ -174,8 +174,6 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                                      |
 | **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                      |
 
- 
-
 ### **Concluding remarks**
 
 This proposal presents a plan for providing a smart home accessories. This is an

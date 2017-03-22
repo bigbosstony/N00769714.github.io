@@ -221,7 +221,7 @@ possibilities.
 
 [1. Introduction](#introduction)
 
-[1.1 Purpose](#purpose)
+[1.1 Purpose](#1.1 Purpose )
 
 [1.2 Scope](#scope)
 

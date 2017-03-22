@@ -52,13 +52,9 @@ Computer Systems Project as a member of a 2 or 3 student group.
 By using this project, you can automatically turn on your lamp when you get
 home.
 
- 
-
 I have searched for prior art via Humber’s IEEE subscription selecting “My
 Subscribed Content” and have found and read which provides insight into similar
 efforts.
-
- 
 
 The first article I found discusses how to set up your own database by using PHP
 & MySQL.[@1510592]
@@ -68,8 +64,6 @@ Mobile.[@4598867]
 
 The third article gives the information about how to merge GPS information to a
 real map.[@5702361]
-
- 
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
@@ -91,8 +85,6 @@ Engineering,
 
 This knowledge and skill set will enable me to build the subsystems and
 integrate them together as my capstone project.
-
- 
 
 ### **Methodology**
 

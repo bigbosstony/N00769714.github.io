@@ -6,7 +6,8 @@ csl: apa.csl
 PiHue Project
 =============
 
-Projects website: <https://bigbosstony.github.io/>
+Projects website:
+<https://bigbosstony.https://github.com/bigbosstony/bigbosstony.github.io/github.io/>
 
 Declaration of Sole Authorship
 ==============================
@@ -20,8 +21,18 @@ Yan Yu
 
 Date: February 7, 2017
 
+Previous Project Description
+============================
+
+During the fifth semester me and my group members have been working on a project
+called Smart Parking Lot. The full project would has the functions to taking
+pictures of vehicles’ licenses plates and then open the gate or close the gate
+let the vehicle enter or exit automatically. However, due to the cancellation of
+the project in this semester, I started on my own project by myself. You can
+check out my previous project on this website <https://bigbosstony.github.io>.
+
 Proposal
---------
+========
 
 Jan 30, 2017
 
@@ -36,8 +47,8 @@ Computer Engineering Technology Student
 As a student in the Computer Engineering Technology program, I will be
 integrating the knowledge and skills I have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
-to build the hardware portion that will connect to a database as well as to a
-mobile device application. This project mainly focus on the connection between
+to build the hardware portion that will working with the software running on
+raspberry pi system. This project mainly focus on the connection between
 raspberry pi and Philips Hue. I will be collaborating with the following
 company/department Humber Department of Public Safety. In the winter semester I
 have no plan to form a group with the following students, who are also building
@@ -101,8 +112,7 @@ The hardware build will be completed in the fall term. It will fit within the
 CENG Project maximum dimensions of 12 13/16" x 6" x 2 7/8" (32.5cm x 15.25cm x
 7.25cm) which represents the space below the tray in the parts kit. The highest
 AC voltage that will be used is 16Vrms from a wall adaptor from which +/- 15V or
-as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.
- 
+as high as 45 VDC can be obtained. Maximum power consumption will be 20 Watts.  
 *Phase 2 System integration*
 
 The system integration will be completed in the fall term.
@@ -179,89 +189,114 @@ important to start tasks as soon as possible to be able to meet deadlines.
 This proposal presents a plan for providing a smart home accessories. This is an
 opportunity to integrate the knowledge and skills developed in our program to
 create a collaborative IoT capstone project demonstrating my ability to learn
-how to support projects such as the initiative described by . I request approval
-of this project.
+how to support projects. I request approval of this project.
 
 **Abstract**
-================================
+============
 
-Philips Hue starter kit is a great product. I want to discover the
-possibilities.
+Philips Hue starter kit is a great product. I want to discover the possibilities
+of connecting Hue bridge to raspberry pi.
 
 **Table of Contents**
-=======================
+=====================
 
 [Proposal](https://github.com/bigbosstony/bigbosstony.github.io#proposal)
 
-[Excutive Summary](https://github.com/bigbosstony/bigbosstony.github.io#excutive-summary)
+[Excutive
+Summary](https://github.com/bigbosstony/bigbosstony.github.io#excutive-summary)
 
 [Background](https://github.com/bigbosstony/bigbosstony.github.io#background)
 
 [Methodology](https://github.com/bigbosstony/bigbosstony.github.io#methodology)
 
-[Concluding Remarks](https://github.com/bigbosstony/bigbosstony.github.io#concluding-remarks)
+[Concluding
+Remarks](https://github.com/bigbosstony/bigbosstony.github.io#concluding-remarks)
 
 [Abstract](https://github.com/bigbosstony/bigbosstony.github.io#abstract)
 
-[1.0 Introduction](https://github.com/bigbosstony/bigbosstony.github.io#10-introduction)
+[1.0
+Introduction](https://github.com/bigbosstony/bigbosstony.github.io#10-introduction)
 
 [1.1 Purpose](https://github.com/bigbosstony/bigbosstony.github.io#11-purposel)
 
 [1.2 Scope](https://github.com/bigbosstony/bigbosstony.github.io#12scope)
 
-[1.3 Definitions, acronyms, and abbreviations](https://github.com/bigbosstony/bigbosstony.github.io#13-definitions,-acronyms,-and-abbreviations)
+[1.3 Definitions, acronyms, and
+abbreviations](https://github.com/bigbosstony/bigbosstony.github.io#13-definitions,-acronyms,-and-abbreviations)
 
-[2.0 Software Requirements Specification](https://github.com/bigbosstony/bigbosstony.github.io#20-software-requirements-specification)
+[2.0 Software Requirements
+Specification](https://github.com/bigbosstony/bigbosstony.github.io#20-software-requirements-specification)
 
-[2.1 Product Description](https://github.com/bigbosstony/bigbosstony.github.io#21-product-description)
+[2.1 Product
+Description](https://github.com/bigbosstony/bigbosstony.github.io#21-product-description)
 
 [2.1.1 Goal](https://github.com/bigbosstony/bigbosstony.github.io#211-goal)
 
-[2.1.2 Target Users](https://github.com/bigbosstony/bigbosstony.github.io#212-target-users)
+[2.1.2 Target
+Users](https://github.com/bigbosstony/bigbosstony.github.io#212-target-users)
 
-[2.1.3 Overview Of Product](https://github.com/bigbosstony/bigbosstony.github.io#213overview-of-product)
+[2.1.3 Overview Of
+Product](https://github.com/bigbosstony/bigbosstony.github.io#213overview-of-product)
 
-[2.2 System Perspective](https://github.com/bigbosstony/bigbosstony.github.io#22-system-perspective)
+[2.2 System
+Perspective](https://github.com/bigbosstony/bigbosstony.github.io#22-system-perspective)
 
-[2.2.1 Product Perspective](https://github.com/bigbosstony/bigbosstony.github.io#221-product-perspective)
+[2.2.1 Product
+Perspective](https://github.com/bigbosstony/bigbosstony.github.io#221-product-perspective)
 
-[2.2.2 Product Functionality](https://github.com/bigbosstony/bigbosstony.github.io#222-product-functionality)
+[2.2.2 Product
+Functionality](https://github.com/bigbosstony/bigbosstony.github.io#222-product-functionality)
 
-[2.2.3 Requirements](https://github.com/bigbosstony/bigbosstony.github.io#223-requirements)
+[2.2.3
+Requirements](https://github.com/bigbosstony/bigbosstony.github.io#223-requirements)
 
-[2.3 Overall Description](https://github.com/bigbosstony/bigbosstony.github.io#23-overall-description)
+[2.3 Overall
+Description](https://github.com/bigbosstony/bigbosstony.github.io#23-overall-description)
 
-[2.3.1 System Interface](https://github.com/bigbosstony/bigbosstony.github.io#231-system-interface)
+[2.3.1 System
+Interface](https://github.com/bigbosstony/bigbosstony.github.io#231-system-interfacehttps://github.com/bigbosstony/bigbosstony.github.io#232-database)
 
-[2.3.2 Database](https://github.com/bigbosstony/bigbosstony.github.io#232-database)
+[2.3.2
+Hardware](https://github.com/bigbosstony/bigbosstony.github.io#233-hardware)
 
-[2.3.3 Hardware](https://github.com/bigbosstony/bigbosstony.github.io#233-hardware)
+[2.3.3
+Software](https://github.com/bigbosstony/bigbosstony.github.io#234-software)
 
-[2.3.4 Software](https://github.com/bigbosstony/bigbosstony.github.io#234-software)
+[2.4 Build
+Instructions](https://github.com/bigbosstony/bigbosstony.github.io#24-build-instructions)
 
-[2.4 Build Instructions](https://github.com/bigbosstony/bigbosstony.github.io#24-build-instructions)
+[2.4.1
+Introduction](https://github.com/bigbosstony/bigbosstony.github.io#241-introduction)
 
-[2.4.1 Introduction](https://github.com/bigbosstony/bigbosstony.github.io#241-introduction)
+[2.4.2
+Preparation](https://github.com/bigbosstony/bigbosstony.github.io#242-preparation)
 
-[2.4.2 Preparation](https://github.com/bigbosstony/bigbosstony.github.io#242-preparation)
+[2.4.3 System
+Diagram](https://github.com/bigbosstony/bigbosstony.github.io#243-system-diagram)
 
-[2.4.3 System Diagram](https://github.com/bigbosstony/bigbosstony.github.io#243-system-diagram)
+[2.4.4 Cost of
+Material](https://github.com/bigbosstony/bigbosstony.github.io#244-cost-of-material)
 
-[2.4.4 Cost of Material](https://github.com/bigbosstony/bigbosstony.github.io#244-cost-of-material)
+[2.4.5 Time
+Commitment](https://github.com/bigbosstony/bigbosstony.github.io#245-time-commitment)
 
-[2.4.5 Time Commitment](https://github.com/bigbosstony/bigbosstony.github.io#245-time-commitment)
+[2.4.6 Software
+Installation](https://github.com/bigbosstony/bigbosstony.github.io#246-software-installation)
 
-[2.4.6 Software Installation](https://github.com/bigbosstony/bigbosstony.github.io#246-software-installation)
+[2.4.7 System
+Setup](https://github.com/bigbosstony/bigbosstony.github.io#247-system-setup)
 
-[2.4.7 System Setup](https://github.com/bigbosstony/bigbosstony.github.io#247-system-setup)
+[2.4.8 Program
+Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
 
-[2.4.8 Program Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
+[3.0
+Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)
 
-[3.0 Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)
+[4.0
+Recommendation](https://github.com/bigbosstony/bigbosstony.github.io#40-recommendation)
 
-[4.0 Recommendation](https://github.com/bigbosstony/bigbosstony.github.io#40-recommendation)
-
-[5.0 Reference](https://github.com/bigbosstony/bigbosstony.github.io#50-reference)
+[5.0
+Reference](https://github.com/bigbosstony/bigbosstony.github.io#50-reference)
 
 1.0 Introduction
 ================
@@ -281,16 +316,22 @@ The main use of PiHue is to help you control your lights in your home.
 In beta phase, after set up the system, you can easily control your Hue through
 raspberry pi.
 
-In final phase of PiHue, not only raspberry pi can control Hue, but also your
-smartphone.
+In final phase of PiHue, raspberry pi will have the full functionality to
+control Philips Hue lighting systems wirelessly through raspberry pi.
 
 1.3 Definitions, acronyms, and abbreviations
 --------------------------------------------
 
-Phillips Hue: Smart connected lighting
+The bridge: Max 50 bulbs per bridge
+
+A19 Bulb: Light output 806 lm, color temperature 2700K, Beam angle 180° ± 20°
+
+Raspberry pi: small single-board computers.
+
+Ethernet cable: IEE802.3
 
 2.0 Software Requirements Specifications
-==============================================
+========================================
 
 2.1 Product Description
 -----------------------
@@ -298,7 +339,8 @@ Phillips Hue: Smart connected lighting
 ### 2.1.1 Goal
 
 This project will combine Raspberry Pi, Philips Hue and the bridge, connect all
-the device by internet. Control lights using smartphone.
+the device by internet, more specifically all the devices will connect in a
+local network area. Control lights using raspberry pi.
 
 ### 2.1.2 Targeted Users
 
@@ -306,16 +348,17 @@ Tech-fans, with modern technology to build smart home accessories.
 
 ### 2.1.3 Overview Of Product
 
-PiHue includes a Raspberry 2 Model B, Philips Hue bulbs, bridge, an android or
-iOS device and a router.
+PiHue includes a Raspberry 2 Model B, Philips Hue bulbs, the bridge, a router or
+a ethernet switch, power adapter and ethernet to USB adapter(in case your laptop
+do not have a ethernet port).
 
 2.2 System Perspective
 ----------------------
 
 ### 2.2.1 Product Perspective
 
-The product will be written by Python on the Raspberry Pi side, for the mobile
-application, It will support android and ios platform.
+The product will be written by Python on the Raspberry Pi side. It will using
+some pi libraries adopted from internet.
 
 ### 2.2.2 Product Functionality
 
@@ -325,28 +368,26 @@ your own home.
 ### 2.2.3 Requirements
 
 Internet connection is needed to send command and script to bridge to turn on or
-off the lights. A router will be needed to build a secure line for the bridge.
+off the lights. A router will be needed to build a secure line for the bridge. A
+ethernet switch will be helpful to test it in a common public places which
+normally not easy to connect bridge and raspberry pi in the same network area,
+for example, college and library.
 
 2.3 Overall Description
 -----------------------
 
 ### 2.3.1 System Interface
 
-System Interface for my project includes raspberry pi and a smartphone. A web
-based database is for mobile connection. GPS module will be simulated by the
-smartphone.
+System Interface for my project includes raspberry pi and a the bridge, a router
+or a ethernet switch used to create the local network.
 
-### 2.3.2 Database
-
-Website using JSON.
-
-### 2.3.3 Hardware
+### 2.3.2 Hardware
 
 The main process of this project is to understand communication of Hue bridge.
 
-### 2.3.4 Software
+### 2.3.3 Software
 
-User will use raspberry pi and smartphone to integrate with the bridge.
+User will use raspberry pi to integrate with the bridge.
 
 2.4 Build Instruction
 ---------------------
@@ -354,14 +395,72 @@ User will use raspberry pi and smartphone to integrate with the bridge.
 ### 2.4.1 Introduction
 
 Understanding how Philips Hue works, and hack Hue bridge with raspberry pi then
-set up connection with smartphone. This build instruction adopted from [Randy
-Reed](https://www.hackster.io/randywreed) from
+set up connection between raspberry pi and the bridge. I have searched through
+the internet for a proper installation on raspberry pi and found this  build
+instructions adopted from [Randy Reed](https://www.hackster.io/randywreed) on
 [hackster](https://www.hackster.io/randywreed/unlock-phillips-hue-with-ifttt-maker-raspberry-pi-e768bc).
 
 ### 2.4.2 Preparation
 
-Start up with Philips Hue API, you can check out the API from Philips. Also a
-hue library for raspberry pi is needed. phue and pyhue.
+Start up with Philips Hue API, you can check out the API from Philips
+<https://www.developers.meethue.com>. Also a hue library for raspberry pi is
+needed, I found two libraries on GitHub, you can choose one of them or both:
+[phue](https://github.com/studioimaginaire/phue) and
+[pyhue](https://github.com/aleroddepaz/pyhue).
+
+### 2.4.2.1 Connect bridge and pi to the same network
+
+Connect raspberry pi and the bridge in the same network area location is very
+easy to do in your house network, just connect raspberry pi wireless or wired to
+the router, and connect the bridge to the router wired, and you are ready to go.
+
+But in a public area, it’s could be difficult to do. In Humber College, I tried
+to connect raspberry pi to the college WiFi, however, raspberry pi does not
+recognized by our network, and can not be configured. The reason is Humber uses
+a PEAP(Protected Extensible Authentication Protocol) network protocol, this
+protocol is a high level protected communication channel. It requires a
+server-side PKI certificate to create a secure TLS tunnel to protect user
+authentication and use server-side public key certificates to authenticate the
+server.
+
+To solve this question, I set up a router at school, by creating your own
+network and set up your protocol, it it possible to connect bridge and raspberry
+pi in the same network. I used a [AirPort
+Express](http://www.apple.com/ca/shop/product/MC414AM/A/airport-express?fnode=58),
+you can easily set up and administrate this router from your Mac or iOS devices.
+
+Finally, using AirPort Express is one way to set up your network, but I
+discovered a new way and the best way to handle this situation. Taking your
+raspberry pi outside to test your project can be messed up, you have to connect
+power cable, keyboard, mouse and a display. Then you have to set up your router
+and bridge, this process is possible but not convenience. I found a short cut to
+do this. You will set up the connection to by the following diagram.
+
+
+
+MacBook (Ethernet port or Adaptor)
+
+\| Ethernet cable \|
+
+Ethernet switch \<=\> power adaptor
+
+\| Ethernet cable \|
+
+/                                     \\
+
+The bridge \<=\>  power adapter  \<=\> raspberry pi
+
+ 
+
+Next, you need to configure your network setting on your MacBook.
+
+Go to your System Preferences, then select Sharing, on the Internet Sharing
+section, turn on Ethernet Port or Ethernet adapter then turn on Internet
+Sharing. Now open VNC Viewer(download from <https://www.realvnc.com>), (your
+raspberry pi should be configured to turn on VNC server), enter the server
+address normally 192.168.2.2, and you are connected to raspberry pi and can use
+your MacBook’s keyboard, trackpad and display. The bridge’s IP address would be
+192.168.2.3.
 
 ### 2.4.3 System Diagram
 
@@ -431,9 +530,9 @@ Body `{“on”:false}`
 ==============
 
 4.0 Recommendation
-===================
+==================
 
 5.0 Reference
-==============
+=============
 
   \#\#\# **References (Generated in pdf)**

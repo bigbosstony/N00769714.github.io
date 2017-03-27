@@ -398,7 +398,7 @@ User will use raspberry pi to integrate with the bridge.
 
 Understanding how Philips Hue works, and hack Hue bridge with raspberry pi then
 set up connection between raspberry pi and the bridge. I have searched through
-the internet for a proper installation on raspberry pi and found this  build
+the internet for a proper installation on raspberry pi and found this build
 instructions adopted from [Randy Reed](https://www.hackster.io/randywreed) on
 [hackster](https://www.hackster.io/randywreed/unlock-phillips-hue-with-ifttt-maker-raspberry-pi-e768bc).
 
@@ -438,19 +438,17 @@ power cable, keyboard, mouse and a display. Then you have to set up your router
 and bridge, this process is possible but not convenience. I found a short cut to
 do this. You will set up the connection to by the following diagram.
 
+\~………………..MacBook (Ethernet port or Adaptor)…………..\~
 
+\~………………………….\| Ethernet cable \|………………………..……..\~
 
-\__________MacBook (Ethernet port or Adaptor)
+\~………………..Ethernet switch \<=\> power adaptor…………..\~
 
-\_______________\| Ethernet cable \|
+\~………………………….\| Ethernet cable \|………………………………..\~
 
-\__________Ethernet switch \<=\> power adaptor
+\~…………………./…………………………………………\\………………………..\~
 
-\_______________\| Ethernet cable \|
-
-\___________/                                     \\
-
-\___The bridge \<=\>  power adapter  \<=\> raspberry pi
+\~…..The bridge \<=\> power adapter \<=\> raspberry pi…..\~
 
  
 

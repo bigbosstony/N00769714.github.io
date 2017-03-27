@@ -271,6 +271,8 @@ Introduction](https://github.com/bigbosstony/bigbosstony.github.io#241-introduct
 [2.4.2
 Preparation](https://github.com/bigbosstony/bigbosstony.github.io#242-preparation)
 
+2.4.2.1 Connect bridge and pi to the same network
+
 [2.4.3 System
 Diagram](https://github.com/bigbosstony/bigbosstony.github.io#243-system-diagram)
 

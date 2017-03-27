@@ -440,17 +440,17 @@ do this. You will set up the connection to by the following diagram.
 
 
 
-MacBook (Ethernet port or Adaptor)
+\__________MacBook (Ethernet port or Adaptor)
 
-\| Ethernet cable \|
+\_______________\| Ethernet cable \|
 
-Ethernet switch \<=\> power adaptor
+\__________Ethernet switch \<=\> power adaptor
 
-\| Ethernet cable \|
+\_______________\| Ethernet cable \|
 
-/                                     \\
+\___________/                                     \\
 
-The bridge \<=\>  power adapter  \<=\> raspberry pi
+\___The bridge \<=\>  power adapter  \<=\> raspberry pi
 
  
 

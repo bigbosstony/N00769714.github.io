@@ -555,7 +555,19 @@ Two kinds of libraries for pi I found is
 
 **phue:** `sudo easy_install phue` or `pip install phue`
 
-### 2.4.7.3 The bridge Setup
+**requests: **`sudo apt-get install python-pip`
+
+`sudo pip install requests`
+
+ 
+
+ 
+
+### 2.4.7.3 Other Requirement 
+
+ 
+
+### 2.4.7.4 The bridge Setup
 
 Using [www.meethue.com/api/nupnp](www.meethue.com/api/nupnp) to discover the IP
 address and ID of the bridge.
@@ -589,13 +601,24 @@ Body `{“on”:false}`
 
 **PUT**
 
+ 
+
 ### 2.4.7.4 IFTTT Setup
 
- 
+Create a IFTTT acc
 
 ### 2.4.8 Program Testing
 
- 
+### 2.4.8.1 Sample Code
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import pyhue
+
+bridge = pyhue.Bridge('my_ip_address', 'my_username')
+for light in bridge.lights:
+    light.on = True
+    light.hue = 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 3.0 Conclusion
 ==============

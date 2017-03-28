@@ -492,11 +492,12 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 ### 2.4.4 Cost of Material
 
-| Raspberry pi 2 Model B            | \$49.99 |
+| Required Items                    | Cost    |
 |-----------------------------------|---------|
 | Philips Hue White A19 Starter Kit | \$69.99 |
 | TP-Link Desktop Switch            | \$14.99 |
 | Ethernet Cable                    | \$4.99  |
+| Raspberry pi 2 Model B            | \$49.99 |
 
 ### 2.4.5 Time Commitment
 

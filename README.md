@@ -1,6 +1,6 @@
 ---
-csl: apa.csl
 bibliography: PiHue.bib
+csl: apa.csl
 ---
 
 PiHue Project
@@ -8,6 +8,8 @@ PiHue Project
 
 Projects website:
 <https://bigbosstony.https://github.com/bigbosstony/bigbosstony.github.io/github.io/>
+
+\\paperbreak
 
 Declaration of Sole Authorship
 ==============================
@@ -267,14 +269,17 @@ Instructions](https://github.com/bigbosstony/bigbosstony.github.io#24-build-inst
 [2.4.1
 Introduction](https://github.com/bigbosstony/bigbosstony.github.io#241-introduction)
 
-[2.4.1.1 Bridge](https://github.com/bigbosstony/bigbosstony.github.io#2411-bridge)
+[2.4.1.1
+Bridge](https://github.com/bigbosstony/bigbosstony.github.io#2411-bridge)
 
-[2.4.1.2 Bulbs and ZigBee](https://github.com/bigbosstony/bigbosstony.github.io#2412-bulbs-and-zigbee)
+[2.4.1.2 Bulbs and
+ZigBee](https://github.com/bigbosstony/bigbosstony.github.io#2412-bulbs-and-zigbee)
 
 [2.4.2
 Preparation](https://github.com/bigbosstony/bigbosstony.github.io#242-preparation)
 
-[2.4.2.1 Hardware Wiring and Network Setup](https://github.com/bigbosstony/bigbosstony.github.io#2421-hardware-wiring-and-network-setup)
+[2.4.2.1 Hardware Wiring and Network
+Setup](https://github.com/bigbosstony/bigbosstony.github.io#2421-hardware-wiring-and-network-setup)
 
 [2.4.3 System
 Diagram](https://github.com/bigbosstony/bigbosstony.github.io#243-system-diagram)
@@ -285,26 +290,35 @@ Material](https://github.com/bigbosstony/bigbosstony.github.io#244-cost-of-mater
 [2.4.5 Time
 Commitment](https://github.com/bigbosstony/bigbosstony.github.io#245-time-commitment)
 
-[2.4.6 Hardware Installation](https://github.com/bigbosstony/bigbosstony.github.io#246-hardware-installation)
+[2.4.6 Hardware
+Installation](https://github.com/bigbosstony/bigbosstony.github.io#246-hardware-installation)
 
-[2.4.6.1 PiTFT Plus Touchscreen Installation](https://github.com/bigbosstony/bigbosstony.github.io#2461-pitft-plus-touchscreen-installation)
+[2.4.6.1 PiTFT Plus Touchscreen
+Installation](https://github.com/bigbosstony/bigbosstony.github.io#2461-pitft-plus-touchscreen-installation)
 
 [2.4.7 Software Library
 Installation](https://github.com/bigbosstony/bigbosstony.github.io#246-software-installation)
 
-[2.4.7.1 System Update](https://github.com/bigbosstony/bigbosstony.github.io#2471-system-update)
+[2.4.7.1 System
+Update](https://github.com/bigbosstony/bigbosstony.github.io#2471-system-update)
 
-[2.4.7.2 Library Installation](https://github.com/bigbosstony/bigbosstony.github.io#2472-library-installation)
+[2.4.7.2 Library
+Installation](https://github.com/bigbosstony/bigbosstony.github.io#2472-library-installation)
 
-[2.4.7.3 Other Requirement](https://github.com/bigbosstony/bigbosstony.github.io#2473-other requirement)
+[2.4.7.3 Other
+Requirement](https://github.com/bigbosstony/bigbosstony.github.io#2473-other%20requirement)
 
-[2.4.7.4 The bridge Setup](https://github.com/bigbosstony/bigbosstony.github.io#2474-the-bridge-setup)
+[2.4.7.4 The bridge
+Setup](https://github.com/bigbosstony/bigbosstony.github.io#2474-the-bridge-setup)
 
-[2.4.7.5 IFTTT Setup](https://github.com/bigbosstony/bigbosstony.github.io#2475-ifttt-setup)
+[2.4.7.5 IFTTT
+Setup](https://github.com/bigbosstony/bigbosstony.github.io#2475-ifttt-setup)
 
-[2.4.8 Program Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
+[2.4.8 Program
+Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
 
-[2.4.8.1 Sample Code](https://github.com/bigbosstony/bigbosstony.github.io#2481-sample-code)
+[2.4.8.1 Sample
+Code](https://github.com/bigbosstony/bigbosstony.github.io#2481-sample-code)
 
 [3.0
 Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)

@@ -486,7 +486,7 @@ address normally 192.168.2.2, and you are connected to raspberry pi and can use
 your MacBook’s keyboard, trackpad and display. The bridge’s IP address would be
 192.168.2.3.
 
-### 2.4.3 System Diagram
+### 2.4.3 System Diagram 
 
 INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 

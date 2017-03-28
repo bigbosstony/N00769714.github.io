@@ -9,7 +9,8 @@ author: Yan Yu
 Mar 28th, 2017
 
 \pagebreak  
-\linespread{2}\selectfont
+\linespread{2}
+\selectfont
 
 PiHue Project
 =============

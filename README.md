@@ -31,6 +31,8 @@ Yan Yu
 
 Date: February 7, 2017
 
+\pagebreak  
+
 Previous Project Description
 ============================
 
@@ -40,6 +42,8 @@ pictures of vehicles’ licenses plates and then open the gate or close the gate
 let the vehicle enter or exit automatically. However, due to the cancellation of
 the project in this semester, I started on my own project by myself. You can
 check out my previous project on this website <https://bigbosstony.github.io>.
+
+\pagebreak  
 
 Proposal
 ========

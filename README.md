@@ -1,6 +1,6 @@
 ---
-bibliography: PiGPSCitations.bib
 csl: apa.csl
+bibliography: PiHue.bib
 ---
 
 PiHue Project
@@ -67,14 +67,13 @@ I have searched for prior art via Humber’s IEEE subscription selecting “My
 Subscribed Content” and have found and read which provides insight into similar
 efforts.
 
-The first article I found discusses how to set up your own database by using PHP
-& MySQL.[@1510592]
+The first article I found discusses how to control devices through wireless
+transmission[@7845398].
 
-The second journal talks about GPS-Based Tracking Control for a Car-Like Wheeled
-Mobile.[@4598867]
+The second journal talks about design of smart home control system by Internet
+of Things based on ZigBee[@7603564].
 
-The third article gives the information about how to merge GPS information to a
-real map.[@5702361]
+The last one is a breakdown of Amazon echo digital personal assistant[@7098621].
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
@@ -555,17 +554,11 @@ Two kinds of libraries for pi I found is
 
 **phue:** `sudo easy_install phue` or `pip install phue`
 
-**requests: **`sudo apt-get install python-pip`
+**requests:** `sudo apt-get install python-pip`
 
 `sudo pip install requests`
 
- 
-
- 
-
-### 2.4.7.3 Other Requirement 
-
- 
+### 2.4.7.3 Other Requirement
 
 ### 2.4.7.4 The bridge Setup
 
@@ -601,11 +594,11 @@ Body `{“on”:false}`
 
 **PUT**
 
- 
-
 ### 2.4.7.4 IFTTT Setup
 
-Create a IFTTT acc
+Create a IFTTT account on <https://ifttt.com>.
+
+Start using Maker Channel to extends the possibility of your project.
 
 ### 2.4.8 Program Testing
 

@@ -197,7 +197,7 @@ how to support projects. I request approval of this project.
 Philips Hue starter kit is a great product. I want to discover the possibilities
 of connecting Hue bridge to raspberry pi.
 
-eak
+\pagebreak
 
 **Table of Contents**
 =====================
@@ -327,7 +327,7 @@ Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)
 [4.0
 Reference](https://github.com/bigbosstony/bigbosstony.github.io#50-reference)
 
-eak
+\pagebreak
 
 1.0 Introduction
 ================
@@ -362,6 +362,8 @@ Raspberry pi: small single-board computers.
 Ethernet cable: IEE802.3
 
 IFTTT: If This Then That
+
+\pagebreak
 
 2.0 Software Requirements Specifications
 ========================================
@@ -637,6 +639,8 @@ for light in bridge.lights:
     light.hue = 0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+\pagebreak
+
 3.0 Conclusion
 ==============
 
@@ -644,6 +648,8 @@ Learning how the bridge is talking with the Philips Hue Bulbs is the key for
 this program. I simplified on the programming side, set up the connection
 between raspberry pi and the bridge by using python. There are multiple ways to
 do so.
+
+\pagebreak
 
 4.0 Reference
 =============

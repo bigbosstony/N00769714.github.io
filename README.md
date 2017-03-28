@@ -3,6 +3,8 @@ bibliography: PiHue.bib
 csl: apa.csl
 ---
 
+Mar 28, 2017
+
 PiHue Project
 =============
 
@@ -519,14 +521,15 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 ### 2.4.4 Cost of Material
 
-| Required Items                    | Quantity | Cost    |
-|-----------------------------------|----------|---------|
-| Philips Hue White A19 Starter Kit | 1        | \$69.99 |
-| TP-Link Desktop Switch            | 1        | \$14.99 |
-| Ethernet Cable                    | 3        | \$4.99  |
-| Raspberry pi 2 Model B            | 1        | \$49.99 |
-| PiTFT Touchscreen 3.5"            | 1        | \$59.09 |
-| USB-C to Gigabit Ethernet Adapter | 1        | \$29.00 |
+| Required Items                    | Quantity | Cost     |
+|-----------------------------------|----------|----------|
+| Philips Hue White A19 Starter Kit | 1        | \$69.99  |
+| TP-Link Desktop Switch            | 1        | \$14.99  |
+| Ethernet Cable                    | 3        | \$4.99   |
+| Raspberry pi 2 Model B            | 1        | \$49.99  |
+| PiTFT Touchscreen 3.5"            | 1        | \$59.09  |
+| USB-C to Gigabit Ethernet Adapter | 1        | \$29.00  |
+| **Total**                         | 8        | \$228.05 |
 
 ### 2.4.5 Time Commitment
 

@@ -5,19 +5,13 @@ title: PiHue Project
 author: Yan Yu
 ---
 
-\vfill  
-Mar 28th, 2017
-
-\pagebreak  
-\linespread{2}
-\selectfont
-
-PiHue Project
-=============
-
 Project Github Website: <https://github.com/bigbosstony/bigbosstony.github.io>
 
-\pagebreak
+\vfill   Mar 28th, 2017
+
+\pagebreak   \linespread{2} \selectfont
+
+ 
 
 Declaration of Sole Authorship
 ==============================
@@ -31,7 +25,7 @@ Yan Yu
 
 Date: February 7, 2017
 
-\pagebreak  
+\pagebreak
 
 Previous Project Description
 ============================
@@ -43,7 +37,7 @@ let the vehicle enter or exit automatically. However, due to the cancellation of
 the project in this semester, I started on my own project by myself. You can
 check out my previous project on this website <https://bigbosstony.github.io>.
 
-\pagebreak  
+\pagebreak
 
 Proposal
 ========
@@ -239,7 +233,7 @@ Introduction](https://github.com/bigbosstony/bigbosstony.github.io#10-introducti
 [1.3 Definitions, acronyms, and
 abbreviations](https://github.com/bigbosstony/bigbosstony.github.io#13-definitions,-acronyms,-and-abbreviations)
 
-[2.0 Software Requirements
+[2.0 System Requirements
 Specification](https://github.com/bigbosstony/bigbosstony.github.io#20-software-requirements-specification)
 
 [2.1 Product
@@ -378,8 +372,8 @@ IFTTT: If This Then That
 
 \pagebreak
 
-2.0 Software Requirements Specifications
-========================================
+2.0 System Requirements Specifications
+======================================
 
 2.1 Product Description
 -----------------------
@@ -694,7 +688,7 @@ can set up more ambitions project with colour ambiance kit A19 and others.
 
 \pagebreak
 
-4.0 Reference
-=============
+4.0 References
+==============
 
   \#\#\# **References (Generated in pdf)**

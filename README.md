@@ -644,10 +644,22 @@ for light in bridge.lights:
 3.0 Conclusion
 ==============
 
+As the smartphone has been the most important device we use everyday, and
+network based assistant is already taking place of so many area, like Google
+Now, Siri and Amazon echo. These smart devices are entering your house. With
+Philips Hue, it is possible to control lights in your home by your cellphone or
+just your voice. This project is focus on hacking the Hue bridge using raspberry
+pi through a local network.
+
 Learning how the bridge is talking with the Philips Hue Bulbs is the key for
 this program. I simplified on the programming side, set up the connection
 between raspberry pi and the bridge by using python. There are multiple ways to
-do so.
+do so. I first use IFTTT which is the easiest way to get connection with the
+bridge. The whole process is done by ZigBee protocol, and I am coding on the
+raspberry pi by python and existed hue library provided by GitHub.
+
+The project gives you the freedom to use your lights and discover the
+possibility to extend ways to use Philips Hue.
 
 \pagebreak
 

@@ -486,7 +486,7 @@ address normally 192.168.2.2, and you are connected to raspberry pi and can use
 your MacBook’s keyboard, trackpad and display. The bridge’s IP address would be
 192.168.2.3.
 
-### 2.4.3 System Diagram 
+### 2.4.3 System Diagram
 
 INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
@@ -494,12 +494,12 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 | Required Items                    | Quantity | Cost    |
 |-----------------------------------|----------|---------|
-| Philips Hue White A19 Starter Kit |         1| \$69.99 |
-| TP-Link Desktop Switch            |         1| \$14.99 |
-| Ethernet Cable                    |         3| \$4.99  |
-| Raspberry pi 2 Model B            |         1| \$49.99 |
-| PiTFT Touchscreen 3.5"            |         1| \$59.09 |
-| USB-C to Gigabit Ethernet Adapter |         1| \$29.00 |
+| Philips Hue White A19 Starter Kit | 1        | \$69.99 |
+| TP-Link Desktop Switch            | 1        | \$14.99 |
+| Ethernet Cable                    | 3        | \$4.99  |
+| Raspberry pi 2 Model B            | 1        | \$49.99 |
+| PiTFT Touchscreen 3.5"            | 1        | \$59.09 |
+| USB-C to Gigabit Ethernet Adapter | 1        | \$29.00 |
 
 ### 2.4.5 Time Commitment
 
@@ -524,6 +524,8 @@ SDFormater to formate your sd card. Then I used ApplePi Baker(you can find other
 useful tools on <http://elinux.org/RPi_Easy_SD_Card_Setup>) to burn the image to
 the sd card. After that plug in your sd card to the raspberry pi and you are
 ready to start using the touchscreen.
+
+[Update]
 
 ### 2.4.6.2 System Update
 
@@ -582,13 +584,17 @@ Body `{“on”:false}`
 
 ### 2.4.9 Program Testing
 
+ 
+
 3.0 Conclusion
 ==============
 
-4.0 Recommendation
-==================
+Learning how the bridge is talking with the Philips Hue Bulbs is the key for
+this program. I simplified on the programming side, set up the connection
+between raspberry pi and the bridge by using python. There are multiple ways to
+do so.
 
-5.0 Reference
+4.0 Reference
 =============
 
   \#\#\# **References (Generated in pdf)**

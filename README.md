@@ -197,6 +197,8 @@ how to support projects. I request approval of this project.
 Philips Hue starter kit is a great product. I want to discover the possibilities
 of connecting Hue bridge to raspberry pi.
 
+eak
+
 **Table of Contents**
 =====================
 
@@ -324,6 +326,8 @@ Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)
 
 [4.0
 Reference](https://github.com/bigbosstony/bigbosstony.github.io#50-reference)
+
+eak
 
 1.0 Introduction
 ================

@@ -6,6 +6,8 @@ csl: apa.csl
 PiHue Project
 =============
 
+Project Github Website: <https://github.com/bigbosstony/bigbosstony.github.io>
+
 \pagebreak
 
 Declaration of Sole Authorship

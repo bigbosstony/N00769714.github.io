@@ -15,7 +15,7 @@ Project Github Website: <https://github.com/bigbosstony/bigbosstony.github.io>
 Declaration of Sole Authorship
 ==============================
 
-I conform that that this work submitted for assessment is my own and is
+I confirm that that this work submitted for assessment is my own and is
 expressed in my own words. Any uses that was used in this documents that came
 from any other authors were acknowledged where their works were used. A list of
 references are included in this document.
@@ -640,6 +640,20 @@ bridge = pyhue.Bridge('my_ip_address', 'my_username')
 for light in bridge.lights:
     light.on = True
     light.hue = 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+python script with `jason` and `requests` libraries, e.g:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import requests
+import json
+
+url = "http://[Bridge IP address]/api/[username]/lights/1/state"
+
+data_on = {"on":True, "sat":254, "bri":254,"hue":5000}
+data_off = {"on":False}
+
+r = requests.put(url, json.dumps(data_on), timeout=5)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 \pagebreak

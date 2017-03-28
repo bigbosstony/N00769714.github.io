@@ -6,12 +6,7 @@ csl: apa.csl
 PiHue Project
 =============
 
-Projects website:
-<https://bigbosstony.https://github.com/bigbosstony/bigbosstony.github.io/github.io/>
-
- 
-
-pagebreak
+\\pagebreak
 
  
 

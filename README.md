@@ -6,8 +6,6 @@ csl: apa.csl
 PiHue Project
 =============
 
-\\pagebreak
-
 
 
 Declaration of Sole Authorship

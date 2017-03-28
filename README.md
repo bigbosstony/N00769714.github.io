@@ -498,6 +498,8 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 | TP-Link Desktop Switch            | \$14.99 |
 | Ethernet Cable                    | \$4.99  |
 | Raspberry pi 2 Model B            | \$49.99 |
+| PiTFT Touchscreen 3.5"            | \$59.09 |
+| USB-C to Gigabit Ethernet Adapter | \$29.00 |
 
 ### 2.4.5 Time Commitment
 
@@ -509,7 +511,30 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 ### 2.4.6 Hardware Installation
 
- 
+### 2.4.6.1 PiTFT Plus Touchscreen Installation (Option)
+
+For easy way to control the bridge using raspberry pi, you can install a
+touchscreen. I used PiTFT Plus 480x320 3.5” TFT+Touchscreen from
+[adafruit](https://www.adafruit.com/products/2441). The installation process is
+follewed by
+[adafruit](https://learn.adafruit.com/adafruit-pitft-3-dot-5-touch-screen-for-raspberry-pi/easy-install).
+I choose easy install option which you can download the fully prepared image
+from the website above. After that you will start up a fresh sd card, use
+SDFormater to formate your sd card. Then I used ApplePi Baker(you can find other
+useful tools on <http://elinux.org/RPi_Easy_SD_Card_Setup>) to burn the image to
+the sd card. After that plug in your sd card to the raspberry pi and you are
+ready to start using the touchscreen.
+
+### 2.4.6.2 System Update
+
+forst, update you system’s package list by:
+
+`sudo apt-get update`
+
+Next, upgrade all your installed packages to their latest versions with the
+command:
+
+`sudo apt-get dist-upgrade`
 
 ### 2.4.7 Software Library Installation
 

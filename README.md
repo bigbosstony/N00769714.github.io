@@ -268,10 +268,14 @@ Instructions](https://github.com/bigbosstony/bigbosstony.github.io#24-build-inst
 [2.4.1
 Introduction](https://github.com/bigbosstony/bigbosstony.github.io#241-introduction)
 
+2.4.1.1 Bridge
+
+2.4.1.2 Bulbs and ZigBee
+
 [2.4.2
 Preparation](https://github.com/bigbosstony/bigbosstony.github.io#242-preparation)
 
-2.4.2.1 Connect bridge and pi to the same network
+2.4.2.1 Hardware Wiring and Network Setup
 
 [2.4.3 System
 Diagram](https://github.com/bigbosstony/bigbosstony.github.io#243-system-diagram)
@@ -282,13 +286,15 @@ Material](https://github.com/bigbosstony/bigbosstony.github.io#244-cost-of-mater
 [2.4.5 Time
 Commitment](https://github.com/bigbosstony/bigbosstony.github.io#245-time-commitment)
 
-[2.4.6 Software
+2.4.6 Hardware Installation
+
+[2.4.7 Software Library
 Installation](https://github.com/bigbosstony/bigbosstony.github.io#246-software-installation)
 
-[2.4.7 System
+[2.4.8 System
 Setup](https://github.com/bigbosstony/bigbosstony.github.io#247-system-setup)
 
-[2.4.8 Program
+[2.4.9 Program
 Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
 
 [3.0
@@ -402,6 +408,24 @@ the internet for a proper installation on raspberry pi and found this build
 instructions adopted from [Randy Reed](https://www.hackster.io/randywreed) on
 [hackster](https://www.hackster.io/randywreed/unlock-phillips-hue-with-ifttt-maker-raspberry-pi-e768bc).
 
+### 2.4.1.1 Bridge
+
+The bridge used to enable your smart bulbs to communicate with other devices via
+the internet. The main API offered by the bridge can be accessed when your app
+and bridge are on the the local network. Also I noticed the bridge’s ethernet
+cable wiring is different than the standard TIA/EIA 568B Wiring.
+
+### 2.4.1.2 Bulbs and ZigBee
+
+These smart bulbs contain 3 types of LED specifically chosen to produce a range
+of colours and intensities. The bulbs I use is Philips Hue White A19 Bulbs. They
+are connected to the bridge via an open standards protocol called ZigBee Light
+Link. ZigBee is an IEEE 802.15.4-based specification for a suite of high-level
+communication protocols used to create personal area networks with small,
+low-power digital radios, such as for home automation, medical device data
+collection, and other low-power low-bandwidth needs. You can find more
+information on the developers’ website <http://www.zigbee.org>.
+
 ### 2.4.2 Preparation
 
 Start up with Philips Hue API, you can check out the API from Philips
@@ -410,7 +434,7 @@ needed, I found two libraries on GitHub, you can choose one of them or both:
 [phue](https://github.com/studioimaginaire/phue) and
 [pyhue](https://github.com/aleroddepaz/pyhue).
 
-### 2.4.2.1 Connect bridge and pi to the same network
+### 2.4.2.1 Hardware Wiring and Network Setup
 
 Connect raspberry pi and the bridge in the same network area location is very
 easy to do in your house network, just connect raspberry pi wireless or wired to
@@ -446,7 +470,7 @@ do this. You will set up the connection to by the following diagram.
 
 \~………………………….\| Ethernet cable \|………………………………..\~
 
-\~…………………./…………………………………………\\………………………..\~
+\~………………….//…………………………………………\\\\……………………..\~
 
 \~…..The bridge \<=\> power adapter \<=\> raspberry pi…..\~
 
@@ -471,6 +495,8 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 | Raspberry pi 2 Model B            | \$49.99 |
 |-----------------------------------|---------|
 | Philips Hue White A19 Starter Kit | \$69.99 |
+| TP-Link Desktop Switch            | \$14.99 |
+| Ethernet Cable                    | \$4.99  |
 
 ### 2.4.5 Time Commitment
 
@@ -480,7 +506,11 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 | Hue bridge connection                       | (1 hr) I using meethue.com to find out the unique ID for the bridge and testing the command with the bridge. |
 | Sample code testing                         | (30 mins) Error fixing.                                                                                      |
 
-### 2.4.6 Software Installation
+### 2.4.6 Hardware Installation
+
+ 
+
+### 2.4.7 Software Library Installation
 
 Two kinds of libraries for pi I found is
 [pyhue](https://github.com/aleroddepaz/pyhue) and
@@ -490,7 +520,7 @@ Two kinds of libraries for pi I found is
 
 **phue:** `sudo easy_install phue` or `pip install phue`
 
-### 2.4.7 System Setup
+### 2.4.8 System Setup
 
 Using [www.meethue.com/api/nupnp](www.meethue.com/api/nupnp) to discover the IP
 address and ID of the bridge.
@@ -524,7 +554,7 @@ Body `{“on”:false}`
 
 **PUT**
 
-### 2.4.8 Program Testing
+### 2.4.9 Program Testing
 
 3.0 Conclusion
 ==============

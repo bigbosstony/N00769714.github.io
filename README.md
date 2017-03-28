@@ -1,13 +1,17 @@
 ---
 bibliography: PiHue.bib
 csl: apa.csl
+title: PiHue Project
+author: "Yan Yu"
 ---
+vfill
+Mar 28th, 2017
 
-Mar 28, 2017
+\pagebreak
+\linespread{2}
 
 PiHue Project
 =============
-
 Project Github Website: <https://github.com/bigbosstony/bigbosstony.github.io>
 
 \pagebreak

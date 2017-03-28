@@ -338,6 +338,8 @@ Raspberry pi: small single-board computers.
 
 Ethernet cable: IEE802.3
 
+IFTTT: If This Then That
+
 2.0 Software Requirements Specifications
 ========================================
 
@@ -371,7 +373,7 @@ some pi libraries adopted from internet.
 ### 2.2.2 Product Functionality
 
 Tha main functionality of my product is to provide user to control lights in
-your own home.
+your home.
 
 ### 2.2.3 Requirements
 
@@ -511,7 +513,7 @@ INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
 
 ### 2.4.6 Hardware Installation
 
-### 2.4.6.1 PiTFT Plus Touchscreen Installation (Option)
+### 2.4.6.1 PiTFT Plus Touchscreen Installation (Option/Archived)
 
 For easy way to control the bridge using raspberry pi, you can install a
 touchscreen. I used PiTFT Plus 480x320 3.5” TFT+Touchscreen from
@@ -525,9 +527,14 @@ useful tools on <http://elinux.org/RPi_Easy_SD_Card_Setup>) to burn the image to
 the sd card. After that plug in your sd card to the raspberry pi and you are
 ready to start using the touchscreen.
 
-[Update]
+[Update] I noticed if you update your raspberry pi to the latest version, it
+will overwrite the configuration file of the touchscreen, and the raspberry pi
+will stuck at the booting section leave a black screen. I suggest you to follow
+section 2.4.2.1 for the setup.
 
-### 2.4.6.2 System Update
+### 2.4.7 Software Installation
+
+### 2.4.7.1 System Update
 
 forst, update you system’s package list by:
 
@@ -538,7 +545,7 @@ command:
 
 `sudo apt-get dist-upgrade`
 
-### 2.4.7 Software Library Installation
+### 2.4.7.2 Library Installation
 
 Two kinds of libraries for pi I found is
 [pyhue](https://github.com/aleroddepaz/pyhue) and
@@ -548,7 +555,7 @@ Two kinds of libraries for pi I found is
 
 **phue:** `sudo easy_install phue` or `pip install phue`
 
-### 2.4.8 System Setup
+### 2.4.7.3 The bridge Setup
 
 Using [www.meethue.com/api/nupnp](www.meethue.com/api/nupnp) to discover the IP
 address and ID of the bridge.
@@ -582,7 +589,11 @@ Body `{“on”:false}`
 
 **PUT**
 
-### 2.4.9 Program Testing
+### 2.4.7.4 IFTTT Setup
+
+ 
+
+### 2.4.8 Program Testing
 
  
 

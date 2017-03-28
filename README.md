@@ -659,10 +659,13 @@ this program. I simplified on the programming side, set up the connection
 between raspberry pi and the bridge by using python. There are multiple ways to
 do so. I first use IFTTT which is the easiest way to get connection with the
 bridge. The whole process is done by ZigBee protocol, and I am coding on the
-raspberry pi by python and existed hue library provided by GitHub.
+raspberry pi by python and existed hue library provided by GitHub. The python
+library foe Philips Hue is compatible with Philips Hue API 1.0.
 
 The project gives you the freedom to use your lights and discover the
-possibility to extend ways to use Philips Hue.
+possibility to extend ways to use Philips Hue. With A19 white Bulbs, you only
+find a little fraction of the Hue, but understanding the theory behind it, you
+can set up more ambitions project with colour ambiance kit A19 and others.
 
 \pagebreak
 

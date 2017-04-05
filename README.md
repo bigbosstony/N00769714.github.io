@@ -343,13 +343,19 @@ Reference](https://github.com/bigbosstony/bigbosstony.github.io#50-reference)
 -----------
 
 The purpose of this documentation is to give a description of the “PiHue" in
-both hardware requirements and software side. It will also contain a
-explaination of the application.
+both sides on hardware requirements and software requirements. It will also
+contain a explaination of the application.
 
 1.2 Scope
 ---------
 
-The main use of PiHue is to help you control your lights in your home.
+The main use of PiHue is to help you control your lights in your home. Philips
+has developed a wireless lighting system called Philips Hue. It allows you
+wirelessly control your lights of your home by using application or voice
+assistance with Amazon Alexa, Apple HomeKit and Google Home. The idea of this
+project is hacking the bridge with available resources and setup connection
+between raspberry pi and the bridge. Therefor you can control the lights
+wirelessly on your raspberry pi with a dedicated API.
 
 In beta phase, after set up the system, you can easily control your Hue through
 raspberry pi.
@@ -392,20 +398,35 @@ Tech-fans, with modern technology to build smart home accessories.
 
 PiHue includes a Raspberry 2 Model B, Philips Hue bulbs, the bridge, a router or
 a ethernet switch, power adapter and ethernet to USB adapter(in case your laptop
-do not have a ethernet port).
+do not have a ethernet port). Also, website service will be needed as
+[IFTTT](https://ifttt.com), you will need to create a account on this website.
+This website is used to trigger event or make web requests. A json server is
+necessary for handling the data transmission and data update. Local host or
+using other available server is your choice. In my case, I host a local server.
+If you are using local host, you will need to make it public accessible by a
+secure line.
 
 2.2 System Perspective
 ----------------------
 
 ### 2.2.1 Product Perspective
 
-The product will be written by Python on the Raspberry Pi side. It will using
-some pi libraries adopted from internet.
+This product is open source, with the hopes that users will modify and
+distribute their own customized version. It will be written by Python on the
+Raspberry Pi side. It will using some  libraries adopted from internet.
 
 ### 2.2.2 Product Functionality
 
 Tha main functionality of my product is to provide user to control lights in
-your home.
+your home. Connect the bridge and raspberry pi in the same local network. For
+testing and demonstration purpose, raspberry pi and the bridge are connected to
+a ethernet switch, and the ethernet switch is connect to laptop witch has setup
+the internet sharing function. This project is designed to work with the
+internet. Users will take input from keyboard to turn On/Off the lights, also
+adjust the brightness. On the mobile side, with a IFTTT account, users will be
+able to control light on their cellphone. The software on raspberry pi will have
+the function to display the current light status on the screen in a fullscreen
+mode. Users will get SMS message when the lights on or off.
 
 ### 2.2.3 Requirements
 
@@ -426,10 +447,14 @@ or a ethernet switch used to create the local network.
 ### 2.3.2 Hardware
 
 The main process of this project is to understand communication of Hue bridge.
+And learn how to set up a connection between raspberry pi and the bridge in a
+public place.
 
 ### 2.3.3 Software
 
-User will use raspberry pi to integrate with the bridge.
+User will use raspberry pi to integrate with the bridge. Hue API for raspberry
+pi will be introduced by the following section. Python is the programming
+language used for this project.
 
 2.4 Build Instruction
 ---------------------
@@ -522,7 +547,39 @@ your MacBook’s keyboard, trackpad and display. The bridge’s IP address would
 
 ### 2.4.3 System Diagram
 
-INPUT —\> Raspberry Pi —\> Action —\>Philips Hue API —\> Hue Bridge
+Input on raspberry pi side
+
+\#……………………………...INPUT…………………………………………………...\#
+
+\#……………………………...Raspberry Pi……………………………………...…\#
+
+\#……………………………...Action…………………………………\>……………...\#
+
+\#……………………………...Philips Hue ApI………………Trigger………….\#
+
+\#……………………………...Hue Bridge………………………IFTTT……..…...\#
+
+\#……………………………...Lights……………………………..Message….……..\#
+
+ 
+
+Input on smartphone
+
+\#……………………………...Press Button……………………………………………...\#
+
+\#……………………………….IFTTT.web.request…………………………………...\#
+
+\#……………………………….PUT.data.to.server...………………………………...\#
+
+\#……………………………….check.data.on.server.……………………………...\#
+
+\#……………………………….IF.updated………………………………………………...\#
+
+\#……………………………….Action.to.Hue.API……………………………………...\#
+
+\#……………………………….Lights………………………………………...……………...\#
+
+ 
 
 ### 2.4.4 Cost of Material
 
@@ -584,8 +641,6 @@ Two kinds of libraries for pi I found is
 [pyhue](https://github.com/aleroddepaz/pyhue) and
 [phue](https://github.com/studioimaginaire/phue).
 
-**pyhue:** `pip install pyhue`
-
 **phue:** `sudo easy_install phue` or `pip install phue`
 
 **requests:** `sudo apt-get install python-pip`
@@ -593,6 +648,21 @@ Two kinds of libraries for pi I found is
 `sudo pip install requests`
 
 ### 2.4.7.3 Other Requirement
+
+Node.js is a server-side platform built on Google Chrome’s JavaScript Engine.
+You might need this for your server environment.
+
+Download the package directly from the [website](https://nodejs.org).
+
+Or install it form terminal.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ cd /tmp
+$ wget http://nodejs.org/dist/v6.3.1/node-v6.3.1-linux-x64.tar.gz
+$ tar xvfz node-v6.3.1-linux-x64.tar.gz
+$ mkdir -p /usr/local/nodejs
+$ mv node-v6.3.1-linux-x64/* /usr/local/nodejs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### 2.4.7.4 The bridge Setup
 
@@ -634,9 +704,27 @@ Create a IFTTT account on <https://ifttt.com>.
 
 Start using Maker Channel to extends the possibility of your project.
 
+ 
+
+### 2.4.7.6 Server Setup
+
+### 2.4.7.6.1 JSON Server
+
+### 2.4.7.6.2 Access Local Host From Anywhere
+
+### 2.4.7.6.3 Test Server from terminal 
+
+### 2.4.7.6.4 Test Server using python
+
+ 
+
+ 
+
 ### 2.4.8 Program Testing
 
 ### 2.4.8.1 Sample Code
+
+###  
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import pyhue
@@ -647,18 +735,14 @@ for light in bridge.lights:
     light.hue = 0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-python script with `jason` and `requests` libraries, e.g:
+ 
+
+python script with `json` and `requests` libraries, e.g:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import requests
 import json
 
-url = "http://[Bridge IP address]/api/[username]/lights/1/state"
-
-data_on = {"on":True, "sat":254, "bri":254,"hue":5000}
-data_off = {"on":False}
-
-r = requests.put(url, json.dumps(data_on), timeout=5)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 \pagebreak

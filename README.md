@@ -325,8 +325,8 @@ Setup](https://github.com/bigbosstony/bigbosstony.github.io#2475-ifttt-setup)
 [2.4.8 Program
 Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
 
-[2.4.8.1 Sample
-Code](https://github.com/bigbosstony/bigbosstony.github.io#2481-sample-code)
+[2.4.8.1 JSON data
+comparison](https://github.com/bigbosstony/bigbosstony.github.io#2481-sample-code)
 
 [3.0
 Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)
@@ -704,46 +704,289 @@ Create a IFTTT account on <https://ifttt.com>.
 
 Start using Maker Channel to extends the possibility of your project.
 
- 
+### 2.4.7.5.1 Receive a web request 
+
+After create your IFTTT account, search for Maker Webhooks, in Maker Webhooks,
+click Settings, now you will see a url for your maker channel, go to the url in
+a new webpage which will be used later. Now go back to IFTTT homepage and click
+My Applets, then New Applet, to load new applet creation page. Select `this` to
+to choose a service, then search maker to receive a web requests, enter a event
+name you will be used and hit Create trigger. Following on that, select `that`
+keyword and search SMS service, you will be asked to enter your phone number and
+then edit the message you want to sent, hit on Create action button. Your applet
+is now created. Place your event name in the url you have created before and
+test it with `curl` from a command line.
+
+`curl -X POST https://maker.ifttt.com/trigger/{event}/with/key/your_key`
 
 ### 2.4.7.6 Server Setup
 
+I set up my local JSON Server by using
+[json-server](https://github.com/typicode/json-server) from Github. Following
+the document on the webpage, you can set up your local server. Of course this
+server is a very lite version json server, but it is enough for my project. If
+you want to do more on the database, you can also use Firebase from Google or
+AWS from Amazon. For the installation part, you will need `node` to install
+json-server. Make sure you have `Homebrew` and `Xcode` installed on your Mac.
+
 ### 2.4.7.6.1 JSON Server
+
+Install Xcode:
+
+Xcode can be download directly from the App Store.
+
+Install `Homebrew` on macOS, paste the line below at a terminal prompt:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Install `node` and `npm`, open terminal and type:
+
+`brew install node`
+
+Install `json-server`, in terminal:
+
+`npm install -g json-server`
+
+After install the `json-server` create a `db.json` file with some data in it,
+then start JSON Server with:
+
+`json-server --watch db.json`
+
+Then go to [http://localhost:3000](http:localhost:3000) you will see the data
+you have created in the db.json file. Functions like GET, POST, PUT, DELETE,
+HEAD, PATCH are all included.
 
 ### 2.4.7.6.2 Access Local Host From Anywhere
 
+if your localhost does not start or you can not see the localhost webpage, you
+probably need to start your apache server. In macOS, apache server is included
+by default. Start it with:
+
+`apachectl start`
+
+Now you have your server online, but you can’t visit it outside of your local
+network. After doing some research, I find there are actually plenty of ways to
+make your local host go public by using a secure tunnel.
+
+`ngrok` is an application for Windows, macOS and Linux that creates a tunnel but
+also allows you to inspect all traffic that goes through the tunnel. Download
+ngrok from it’s [website](https://ngrok.com), unzip it by `unzip
+/path/to/ngrok.zip`, navigate to the folder it located and run it with `./ngrok
+help`.
+
+in my case, as I use `localhost:3000`, I would set this port publicly.
+
+`./ngrok http 3000`
+
+A successful message would shows up, and you will see it online and two
+forwarding  addresses created by ngrok. Open the url from any device with
+internet connection and you will accessing your localhost. If you go to
+[http://localhost:4040](http://localhost:4040) on your computer, a traffic
+history will be provided.
+
 ### 2.4.7.6.3 Test Server from terminal 
+
+Once you started your server, test it form terminal,
+
+Return a detailed list of your database:
+
+`curl -X GET "http://localhost:3000/db"`
+
+To insert a new section for your posts section, you will need to send data using
+a POST request:
+
+`curl -X POST -H "Content-Type: application/json" -d '{your_new_data}'
+"http://localhost:3000/posts"`
+
+Get your new data by:
+
+`curl -X GET "http://localhost:3000/posts"`
+
+To update your existing data, you will use PUT requests:
+
+`curl -X PUT -H 'Content-Type: application/json' -d '[your_JSON_data]'
+"http://localhost:3000/posts/1"`
 
 ### 2.4.7.6.4 Test Server using python
 
- 
+I found a Quickstart for python-requests from this website:
+<http://docs.python-requests.org/en/master/>. Make sure your requests is
+installed and up to data.
 
- 
+Open a new terminal window then type: `python`
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> import requests
+>>> import json
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now, get your local host:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> r = requests.get('http://localhost:3000')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Get your response code:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> r.status_code
+200
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Get the header:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Get the text:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> r.text
+u'{...}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Get JSON data:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>> r.json()
+{u'...}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+POST to your database:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+r = requests.post('http://localhost:3000/posts', data = {'key':'value'})
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Other functions will be similar:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+r = requests.put('http://localhost:3000/posts/1', data = {'key':'value'})
+r = requests.delete('http://localhost:3000/posts/2')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### 2.4.8 Program Testing
 
-### 2.4.8.1 Sample Code
+### 2.4.8.1 JSON data comparison 
 
-###  
+When you updated your database, you have to check the value changed or not:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import pyhue
+import json
+import requests
 
-bridge = pyhue.Bridge('my_ip_address', 'my_username')
-for light in bridge.lights:
-    light.on = True
-    light.hue = 0
+r = requests.get("http://localhost:3000/posts/1")
+x = json.loads("""{"id": 1, "on": "true"}""")
+y = r.json()
+x == y
+# result: True
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  
 
-python script with `json` and `requests` libraries, e.g:
+### 2.4.8.2 Display and the Bridge initialization
+
+I use `pygame` to display the lights status on the screen:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import requests
-import json
+import pygame, sys
+from pygame.locals import *
+
+SCREEN_WIDTH = 1280
+SCREEN_HEIGHT = 1024
+
+pygame.init()
+pygame.display.init()
+pygame.font.init()
+pygame.font.get_fonts()
+size = (SCREEN_WIDTH, SCREEN_HEIGHT)
+windowSurface = pygame.display.set_mode(size, pygame.FULLSCREEN)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You also need to refresh the screen by put the code at the end of your loop:
+
+`pygame.display.update()`
+
+Set up the bridge by `phue` library:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+from phue import Bridge
+
+b = Bridge('your_bridge_ip_address')
+b.connect()
+b.get_api()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initialize on and off command for your lights:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MAX = 254
+on_command = {'on': True, 'bri': MAX}
+off_command = {'on': False}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I use the `pygame` function to let user take single key press to control the
+lights:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+for event in pygame.event.get():
+    if event.type == QUIT:
+        pygame.quit()
+        sys.exit()
+    if event.type == KEYDOWN:
+        if event.key == pygame.K_LEFT:
+        b.set_light(2, on_command)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the Hue API, transition times are specified in deciseconds(tenths of a
+second), this is not what we need if we want blink the lights. Setting
+transition times:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Set brightness of lamp 1 to max , rapidly
+b.set_light(1, 'bri', 254, transitiontime=1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now combine the IFTTT with your python code to turn on the light 1 when you
+press the right arrow key:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if event.key == pygame.K_LEFT:
+    b.set_light(1, on_command)
+    r = requests.post('https://maker.ifttt.com/trigger/{event}/with/key/your_key')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
+
+### 2.4.8.3 Using IFTTT to make a web requests
+
+In the previous section you have set up the IFTTT to receive a web request, now
+you will do a little more work to make a web request to your server. Go to My
+Applets and select New Applet, then in `this` section select Button widget (or
+any other option you like). Follow the site and select `that` with Maker
+Webhooks, in make a web request section, fill the URL with your JSON-Server http
+link that have broadcast by `ngork`, in method field select `PUT`, content type
+you will select application/json, at the body section you put `{"id": 1,
+"on":"true"}` in the field and then save. Now in your python code you can use
+`request` to listen on your server. Ever time you press the button on your
+phone, it will blink the lights.
+
+ 
+
+### 2.4.8.4 Other
+
+ 
+
+ 
+
+You can find the full code from my Github:
+<https://github.com/bigbosstony/bigbosstony.github.io/>
+
+ 
 
 \pagebreak
 

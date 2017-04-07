@@ -322,11 +322,31 @@ Setup](https://github.com/bigbosstony/bigbosstony.github.io#2474-the-bridge-setu
 [2.4.7.5 IFTTT
 Setup](https://github.com/bigbosstony/bigbosstony.github.io#2475-ifttt-setup)
 
+[2.4.7.5.1 Receive a web requests](https://github.com/bigbosstony/bigbosstony.github.io#24751-receive-a-web-request)
+
+[2.4.7.6 Server Setup](https://github.com/bigbosstony/bigbosstony.github.io#2476-server-setup)
+
+[2.4.7.6.1 JSON Server](https://github.com/bigbosstony/bigbosstony.github.io#24761-json-server)
+
+[2.4.7.6.2 Access Local Host From Anywhere](https://github.com/bigbosstony/bigbosstony.github.io#24762-access-local-host-from-anywhere)
+
+[2.4.7.6.3 Test Server from termial](https://github.com/bigbosstony/bigbosstony.github.io#24763-test-server-from-terminal)
+
+[2.4.7.6.4 Test Server using python](https://github.com/bigbosstony/bigbosstony.github.io#25764-test-server-using-python)
+
 [2.4.8 Program
 Testing](https://github.com/bigbosstony/bigbosstony.github.io#248-program-testing)
 
 [2.4.8.1 JSON data
-comparison](https://github.com/bigbosstony/bigbosstony.github.io#2481-sample-code)
+comparison](https://github.com/bigbosstony/bigbosstony.github.io#2481-json-data-comparison)
+
+[2.4.8.2 Display and the Bridge initialization](https://github.com/bigbosstony/bigbosstony.github.io#2482-display-and-the-bridge-initialization)
+
+[2.4.8.3 Using IFTTT to make a web requests](https://github.com/bigbosstony/bigbosstony.github.io#2483-using-ifttt-to-make-a-web-requests)
+
+[2.4.8.4 Other Issues](https://github.com/bigbosstony/bigbosstony.github.io#2484-other-issues)
+
+[2.4.8.5 Final Project](https://github.com/bigbosstony/bigbosstony.github.io#2485-final-project)
 
 [3.0
 Conclusion](https://github.com/bigbosstony/bigbosstony.github.io#30-conclusion)
@@ -668,7 +688,7 @@ Input on smartphone
 
 ### 2.4.6 Hardware Installation
 
-### 2.4.6.1 PiTFT Plus Touchscreen Installation (Option/Archived)
+### 2.4.6.1 PiTFT Plus Touchscreen Installation
 
 For easy way to control the bridge using raspberry pi, you can install a
 touchscreen. I used PiTFT Plus 480x320 3.5” TFT+Touchscreen from

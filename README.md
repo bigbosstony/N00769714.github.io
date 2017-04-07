@@ -366,15 +366,77 @@ control Philips Hue lighting systems wirelessly through raspberry pi.
 1.3 Definitions, acronyms, and abbreviations
 --------------------------------------------
 
-The bridge: Max 50 bulbs per bridge
+**The Bridge:**
 
-A19 Bulb: Light output 806 lm, color temperature 2700K, Beam angle 180° ± 20°
+The bridge is the heart of your Philips Hue system that connects your smart
+device to your Philips Hue lights. You can add up to 50 Philps Hue lights and
+accessories to one bridge. Linked to Wi-Fi via your router, it also connects
+your system to the wider world via the internet for out-of-home control and
+other smart features. The bridge is included in all Philips Hue starter kits, or
+you can buy it separatly and simply build your own Philips Hue system.
 
-Raspberry pi: small single-board computers.
+**Smart Philips Hue LED bulbs:**
 
-Ethernet cable: IEE802.3
+The smart and energy-efficient LED lights bring Philips Hue to life. They
+deliver bright and beautiful light for your daily activities, special moments,
+and immersive experiences. They’re practical too. They dim. They flash. They
+pulse. They do pretty much anything you want. And they’re available in different
+shapes, sizes and models to suit your home.
 
-IFTTT: If This Then That
+**Raspberry pi:**
+
+Small single-board computers.
+
+**Ethernet cable:**
+
+IEE802.3
+
+**IFTTT:**
+
+IFTTT is a free web-based service that people use to create chains of simple
+conditional statements, called applets. An applet is triggered by changes that
+occur within other web services such as Gmail, Facebook, Instagram, or
+Pinterest. IFTTT is an initialism for *If This Then That*.  
+**ngrok:**
+
+ngrok secure introspect able tunnels to localhost webhook development tool and
+debugging tool.
+
+**Node.js:**
+
+Node.js is an open-source, cross-platform JavaScript runtime environment for
+developing a diverse variety of server tools and applications.
+
+**npm:**
+
+npm is the default package manager for the JavaScript runtime environment
+Node.js.
+
+**pip:**
+
+pip is a package management system used to install and manage software package
+written in Python.
+
+**Python:**
+
+Python is a widely used high-level programming language for general-purpose
+programming.
+
+**Brew:**
+
+Brew program, a build system used within and internal to Red Hat to build their
+Linux distribution packages.
+
+**JSON:**
+
+JSON (JavaScript Object Notation) is a lightweight data-interchange format. It
+is easy for humans to read and write. It is easy for machines to parse and
+generate. It is based on a subset of the JavaScript Programming Language.
+
+**Apache:**
+
+The Apache HTTP Server, colloquially called Apache, is the world’s most used web
+server software.
 
 \pagebreak
 
@@ -413,7 +475,7 @@ secure line.
 
 This product is open source, with the hopes that users will modify and
 distribute their own customized version. It will be written by Python on the
-Raspberry Pi side. It will using some  libraries adopted from internet.
+Raspberry Pi side. It will using some libraries adopted from internet.
 
 ### 2.2.2 Product Functionality
 
@@ -599,7 +661,10 @@ Input on smartphone
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Hue library and other software installation | (1 hr) I take this amount of time to find out the proper library for the system.                             |
 | Hue bridge connection                       | (1 hr) I using meethue.com to find out the unique ID for the bridge and testing the command with the bridge. |
-| Sample code testing                         | (30 mins) Error fixing.                                                                                      |
+| Server setup                                | (1 hr) Following this instruction you can finish that in 30 min.                                             |
+| Sample code testing                         | (2 hr) Error fixing.                                                                                         |
+| Server testing                              | (1 hr) Connection and database.                                                                              |
+| **Total**                                   | **5 hr**                                                                                                     |
 
 ### 2.4.6 Hardware Installation
 
@@ -704,7 +769,7 @@ Create a IFTTT account on <https://ifttt.com>.
 
 Start using Maker Channel to extends the possibility of your project.
 
-### 2.4.7.5.1 Receive a web request 
+### 2.4.7.5.1 Receive a web request
 
 After create your IFTTT account, search for Maker Webhooks, in Maker Webhooks,
 click Settings, now you will see a url for your maker channel, go to the url in
@@ -781,12 +846,11 @@ in my case, as I use `localhost:3000`, I would set this port publicly.
 `./ngrok http 3000`
 
 A successful message would shows up, and you will see it online and two
-forwarding  addresses created by ngrok. Open the url from any device with
+forwarding addresses created by ngrok. Open the url from any device with
 internet connection and you will accessing your localhost. If you go to
-[http://localhost:4040](http://localhost:4040) on your computer, a traffic
-history will be provided.
+<http://localhost:4040> on your computer, a traffic history will be provided.
 
-### 2.4.7.6.3 Test Server from terminal 
+### 2.4.7.6.3 Test Server from terminal
 
 Once you started your server, test it form terminal,
 
@@ -871,7 +935,7 @@ r = requests.delete('http://localhost:3000/posts/2')
 
 ### 2.4.8 Program Testing
 
-### 2.4.8.1 JSON data comparison 
+### 2.4.8.1 JSON data comparison
 
 When you updated your database, you have to check the value changed or not:
 
@@ -977,16 +1041,19 @@ phone, it will blink the lights.
 
  
 
-### 2.4.8.4 Other
+### 2.4.8.4 Other Issues
+
+Initially I was trying to connect GPS from my smartphone to raspberry pi, and
+set a range, when I enter or exit this area, it will trigger the Hue. However,
+during my test, the GPS signal is weak in the building, and the data transfer
+got laggy. It’s also not easy for testing purpose.
 
  
 
- 
+### 2.4.8.5 Final Project
 
 You can find the full code from my Github:
 <https://github.com/bigbosstony/bigbosstony.github.io/>
-
- 
 
 \pagebreak
 

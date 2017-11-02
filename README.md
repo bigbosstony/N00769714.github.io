@@ -863,7 +863,7 @@ by default. Start it with:
 
 Now you have your server online, but you can’t visit it outside of your local
 network. After doing some research, I find there are actually plenty of ways to
-make your local host go public by using a secure tunnel.
+make your local host go public by using a secu./.
 
 `ngrok` is an application for Windows, macOS and Linux that creates a tunnel but
 also allows you to inspect all traffic that goes through the tunnel. Download

@@ -5,7 +5,7 @@ title: PiHue Project
 author: Yan Yu
 ---
 
-Project Github Website: <https://github.com/bigbosstony/bigbosstony.github.io>
+Project Github Website: <https://bigbosstony.github.io/piHueProject/>
 
 \vfill   Mar 28th, 2017
 
